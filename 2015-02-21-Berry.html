@@ -1,0 +1,536 @@
+<!DOCTYPE html><html>     
+    <head>
+      <title>Notes to Intro to Programming</title>
+      <meta charset="utf-8">
+      <link rel="stylesheet" type="text/css" href="feb21style.css">
+    </head> 
+    <body class="bigboxstyle">  
+      <section class="outsidebox">
+        <header><h1>Lesson 1: The Basics of the Web and HTML</h1></header>
+        <article class="insidebox">
+          <header><h2>How the Web Works</h2></header>
+          <p><em>The World Wide Web</em> is the name given to all of the
+          computers able to communicate with each other via the world's
+          largest network, called the Internet. When a person types in a
+          <em>URL</em> like www.google.com into their <em>web browser
+          </em>'s address bar their computer sends an <em>HTTP</em> 
+          Request to a server. The server finds the appropriate <em>HTML
+          </em> document and sends it back to the user's computer where 
+          a web browser interprets the page and displays it on the user's 
+          screen. This 
+          <a href="https://www.udacity.com/course/viewer#!/c-ud721/l-3508959201/e-48329854/m-48480496">
+          video</a> does a good job of explaining more.
+          </p>
+          <p>
+          <strong>The World Wide Web</strong> - An information system of 
+          interlinked HTML documents that are accessed via the Internet. 
+          Individual document pages on the World Wide Web are called web 
+          pages and are accessed with a software application running on 
+          the user's computer, commonly called a web browser. Web pages 
+          may contain text, images, videos, and other multimedia 
+          components, as well as web navigation features consisting of
+          hyperlinks. It was invented in the early 1990's and today has 
+          approximately 30 billion pages.       
+          </p>
+          <p>
+          <strong>HTTP</strong> - Stands for Hypertext Transfer Protocol. 
+          HTTP is an application layer protocol for distributed, 
+          collaborative, hypermedia information systems. HTTP is the 
+          foundation of data communication for the World Wide Web. 
+          Hypertext is structured text that uses logical links 
+          (hyperlinks) between nodes containing text. HTTP is the 
+          protocol to exchange or transfer hypertext.
+          </p>
+          <p>
+          <strong>URL</strong> - Stands for uniform resource locator. It 
+          is also known as a web address. It is a specific character 
+          string that constitutes a reference to a resource, namely a web 
+          page. Most web browsers display the URL of a web page above the 
+          page in an address bar.
+          </p>        
+        </article>
+        <article class="insidebox">
+          <header><h2>HTML</h2></header>
+          <p>
+          <strong>HTML</strong> - HTML stands for <em>Hypertext Markup 
+          Language</em>. HTML documents form the majority of the content 
+          on the web. They contain <em>text content</em> which describes
+          "what you see" and <em>markup</em> which describes "how it 
+          looks."  This 
+          <a href="https://www.udacity.com/course/viewer#!/c-ud721/l-3508959201/m-48724340">
+          video</a> gives a good overview. HTML
+          </p>
+        </article>
+        <article class="insidebox">
+          <header><h2>Tags and Elements</h2></header>
+          <p>
+          HTML documents are made of HTML elements. When writing HTML, 
+          we tell browsers the type of each element by using HTML tags.
+          HTML is written in the form of HTML elements consisting
+          of tags enclosed in angle brackets (like &lt;html &gt;). HTML 
+          tags most commonly come in pairs like &lt;h1&gt;and &lt;/h1 &gt;,
+          although some tags represent <em>empty elements</em> and so are
+          unpaired, for example &lt;img&gt;. The first tag in a pair is 
+          the <em>start tag</em>, and the second tag is the <em>end 
+          tag</em> (they are also called <em>opening tags</em> and 
+          <em>closing tags</em>).
+          This 
+          <a href="https://www.udacity.com/course/viewer#!/c-ud721/l-3508959201/m-48723444">
+          video</a> explains the distinction well.
+          </p>
+        </article>
+        <article class="insidebox">
+          <header><h2>Why Computers are Stupid </h2></header>
+          <p>
+          Computers are stupid because they interpret instructions 
+          literally. This makes them very unforgiving since a small 
+          mistake by a programmer can cause huge problems in a program
+          </p>
+        </article>
+        <article class="insidebox">
+          <header><h2>Inline Elements</h2></header>
+          <p>
+          An inline element occupies only the space bounded by the tags
+          that define the inline element. Generally, inline elements may
+          contain only data and other inline elements. By default, Inline
+          elements are normally displayed without line breaks.
+          <p>
+          Inline Elements include but are not limited to:
+          </p>
+          <ul style="list-style-type:alpha">
+            <li>a, abbr, acronym</li>
+            <li>b, bdo, big, br, button</li>
+            <li>cite, code</li>
+            <li>dfn</li>
+            <li>em</li>
+            <li>i, img, input </li>
+            <li>kbd</li>
+            <li>label</li>
+            <li>map</li>
+            <li>object</li>
+            <li>q</li>
+            <li>samp, script, select, small, span, strong, sub, sup</li>
+            <li>textarea, tt</li>
+            <li>var</li>
+          </ul>
+        </article>
+        <article class="insidebox">
+          <header><h2>Block Elements</h2></header>
+          <p>
+          Block elements form an "invisible box" around the content inside 
+          of them. A block-level element occupies the entire space of its 
+          parent element (container), thereby creating a "block." Browsers 
+          typically display the block-level element with a newline both 
+          before and after the element. Block-level elements may appear 
+          only within a &lt;body&gt; element. Generally, block-level 
+          elements may contain inline elements and other block-level 
+          elements. Inherent in this structural distinction is the idea 
+          that block elements create "larger" structures than inline 
+          elements. The distinction of block-level vs. inline elements is
+          used in HTML specifications up  to 4.01. In HTML5, this binary
+          distinction is replaced with a more complex set of content 
+          categories. The "block-level" category roughly corresponds to
+          the category of flow content in HTML5, while "inline" 
+          corresponds to phrasing content, but there are additional
+          categories.
+          </p>
+          <p>
+          Block elements include but are not limited to:
+          </p>
+          <ul>
+            <li>address, article, aside, audio </li>
+            <li>blockquote</li>
+            <li>canvas</li>
+            <li>dd, div, dl</li>
+            <li>fieldset, figcaption, figure, footer, form</li>
+            <li>h1, h2, h3, h4, h5, h6, header, hgroup, hr</li>
+            <li>noscript</li>
+            <li>ol, output</li>
+            <li> p, pre </li>
+            <li>section</li>
+            <li>table, tfoot</li>
+            <li>ul</li>
+            <li>video</li>
+          </ul>
+        </article>
+      </section>  
+      <section class="outsidebox">
+        <header><h2>Lesson 2: Creating a Structured Document with HTML</h2></header>
+        <article class="insidebox">
+          <header><h2>Web page Elements</h2></header>
+          <p>
+          HTML and CSS are both languages. HTML controls the 
+          "structure" of a web page while CSS controls the "style" of a 
+          page (how it looks).
+          </p>
+        </article>      
+        <article class="insidebox">
+          <header><h2>Tree Structure of HTML</h2></header>
+          <p>The tree structure is a way of representing the hierarchical
+          nature of a structure in a graphical form. It is named a "tree 
+          structure" because the classic representation resembles a tree, 
+          even though the chart is generally upside down compared to an 
+          actual tree, with the "root" at the top and the "leaves" at the bottom.
+          </p>
+          <p>
+          In computer science, a tree is a widely used abstract data type 
+          (ADT) or data structure implementing this ADT that simulates a 
+          hierarchical tree structure, with a root value and subtrees of 
+          children, represented as a set of linked nodes. 
+          </p>
+          <p>
+          A tree data structure can be defined recursively (locally) as a
+          collection of nodes (starting at a root node), where each node is
+          a data structure consisting of a value, together with a list of 
+          references to nodes (the "children"), with the constraints that no
+          reference is duplicated, and none points to the root.
+          </p>
+          <p>
+          Alternatively, a tree can be defined abstractly as a whole 
+          (globally) as an ordered tree, with a value assigned to each
+          node.
+          </p>
+          <p>
+          The "tree-like structure" comes from the fact that HTML elements
+          can have other elements inside of them. In a browser, this 
+          structure shows up as a series of nested boxes. There are boxes
+          inside of boxes inside of boxes, and so on...
+          </p>
+        </article>
+        <article class="insidebox">
+          <header><h2>The relationship between indented HTML and boxes</h2></header>
+          <p>
+          When you read an HTML document as text, you see a wave of changing
+          indentations going up and down the left side of the document. 
+          The more indented an element is, the more deeply nested it's 
+          corresponding "box" is.
+          </p>
+        </article>
+        <article class="insidebox">
+          <header><h2>Text Editors</h2></header>
+          <p>
+          When writing code, programmers use special text editors (like 
+          Sublime Text for example). These editors make the programmer's
+          life easier. For example, some text editors will automatically
+          generate a closing HTML tag when you write an opening tag.
+          </p>
+        </article>
+        <article class="insidebox">
+          <header><h2>Terms</h2></header>
+          <p>
+          <strong>HTML</strong> - 
+          HyperText Markup Language - the standard markup language 
+          used to create web pages
+          </p>
+          <p>
+          <strong>CSS</strong> - Cascading Style Sheets - style sheet 
+          language used for describing the look and formatting of a 
+          document written in a markup language
+          </p>
+          <p>
+          <strong>The DOM</strong> - When programmers talk about the DOM
+          they are talking about the tree-like structure of the page. 
+          DOM stands for Document Object Model. It is a cross-platform 
+          and language-independent convention for representing and 
+          interacting with objects in HTML, XHTML, and XML documents. 
+          The nodes of every document are organized in a tree structure,
+          called the DOM tree. Objects in the DOM tree may be addressed
+          and manipulated by using methods on the objects. The public
+          interface of a DOM is specified in its application programming
+          interface (API).
+          </p>
+          <p>
+          <strong>Layout Engines</strong> - Web browsers rely on layout 
+          engines to parse HTML into a DOM. Some layout engines, such as
+          Trident/MSHTML, are associated primarily or exclusively with a
+          particular browser, such as Internet Explorer. Others, such as
+          Blink, WebKit, and Gecko, are shared by a number of browsers, 
+          such as Google Chrome, Opera, Safari, and Firefox. The different
+          layout engines implement the DOM standards to varying degrees of
+          compliance.
+          </p>
+        </article>
+        <article class="insidebox">
+          <header><h2>Web Page Layout</h2></header>
+          <ul style="list-style-type:circle">
+            <li>All web pages are made up of boxes</li>
+            <li>When looking at a design go from big boxes to small boxes</li>
+          </ul>
+        </article>
+      </section>
+      <section class="outsidebox">
+        <header><h1>Lesson 3: Adding Style to Structure with CSS</h1></header>
+        <article class="insidebox">
+          <header><h2>CSS Introduction</h2></header>
+          <p>
+          Cascading Style Sheets (CSS) is a style sheet language used 
+          describing the look and formatting of a document written in a 
+          markup language. While most often used to change the style of
+          web pages and user interfaces written in HTML and XHTML, the
+          language can be applied to any kind of XML document, including
+          plain XML, SVG and XUL. 
+          </p>
+          <p>
+          Along with HTML and JavaScript, CSS is a cornerstone technology
+          used by most websites to create visually engaging webpages, user
+          interfaces for web applications, and user interfaces for many 
+          mobile applications.
+          </p>
+          <p>
+          CSS is designed primarily to enable the separation of document 
+          content from document presentation, including elements such as 
+          the layout, colors, and fonts. 
+          </p>
+          <p>
+          This separation can improve content accessibility, provide more 
+          flexibility and control in the specification of presentation
+          characteristics, enable multiple HTML pages to share formatting
+          by specifying the relevant CSS in a separate .css file, and reduce
+          complexity and repetition in the structural content, such as 
+          semantically insignificant tables that were widely used to format
+          pages before consistent CSS rendering was available in all major
+          browsers.
+          </p>
+          <p>
+          CSS makes it possible to separate presentation instructions from the 
+          HTML content in a separate file or style section of the HTML file. 
+          For each matching HTML element, it provides a list of formatting 
+          instructions.
+          </p>
+          <p>
+          This separation of formatting and content makes it possible to 
+          present the same markup page in different styles for different 
+          rendering methods, such as on-screen, in print, by voice (when 
+          read out by a speech-based browser or screen reader) and on 
+          Braille-based, tactile devices. 
+          </p>
+          <p>
+          It can also be used to display the web page differently depending
+          on the screen size or device on which it is being viewed.
+          <p>
+          The CSS specification describes a priority scheme to determine 
+          which style rules apply if more than one rule matches against a 
+          particular element. In this so-called cascade, priorities or 
+          weights are calculated and assigned to rules, so that the results
+          are predictable.
+          </p>
+        </article>
+        <article class="insidebox">
+          <header><h2>CSS Specificity</h2></header>
+          <p>
+          <em>Specificity</em> describes the relative weights of various rules. 
+          It determines which styles are applied to an element when more than one
+          rule could apply. Based on specification, a simple selector (e.g., H1) 
+          has a specificity of 1, class selectors have a specificity of 1,0, and ID
+          selectors a specificity of 1,0,0. Because the specificity values do not
+          carry over as in the decimal system, commas are used to separate the 
+          "digits"
+          </p>
+          <p>
+          The priority of a selector (specificity)        
+          </p>
+          <ol>
+            <li>0, 0, 0, 0</li>
+              <ol class="b">
+                <li>1st digit (starting from the left)</li>
+                <ol class="a">
+                  <li>Inline styles?</li>
+                </ol>
+                <li>2nd digit</li>
+                <ol class="a">
+                  <li># of ID selectors</li>
+                </ol>  
+                <li>3rd digit</li>
+                <ol class="a">
+                  <li># of class selectors</li>
+                </ol>
+                <li>4th digit</li>
+                <ol class="a">
+                  <li># of element selectors</li>
+                </ol>
+            </ol>
+            <li>Example</li>
+              <ol class="b">
+                <li>p { color: #fff; } 0, 0, 0, 1</li>
+                  <ol class="a">
+                    <li>no inline styles</li>
+                    <li>no id selector</li>
+                    <li>no class selector</li>
+                    <li>does have an element selector</li>
+                  </ol>
+                <li>.intro { color: #98c7d4 } 0, 0, 1, 0</li>
+                <li>If you compare the above 2 selectors, the .intro
+                element will have a higher specificity
+                  <ol class="a">
+                    <li>no inline styles</li>
+                    <li>no id selector</li>
+                    <li>Does have a class selector</li>
+                    <li>No element selector</li>
+                  </ol>
+                <li>The number to the left will have the higher 
+                priority so that an inline style would take precedence
+                of an external style; an id selector would take priority
+                over a class selector; a class selector would take 
+                priority over an element selector.
+                <li>The ! important selector overrides and takes precedent 
+                over all of the above. 
+                  
+                  
+                </li>
+              </ol>         
+          </ol>
+        </article>
+        <article class="insidebox">
+          <header><h2>CSS Inheritance</h2></header>
+          <p>
+          Inheritance is a key feature in CSS, it relies on the 
+          ancestor-descendant relationship to operate. Inheritance is the
+          mechanism by which properties are applied not only to a 
+          specified element, but also to its descendants.[11] Inheritance
+          relies on the document tree, which is the hierarchy of (X)HTML 
+          elements in a page based on nesting. Descendant elements may 
+          inherit CSS property values from any ancestor element enclosing 
+          them. In general, descendant elements inherit text-related 
+          properties, but box-related properties are not inherited. 
+          Properties that can be inherited are color, font, letter-spacing,
+          line-height, list-style, text-align text-indent, text-transform,
+          visibility, white-space and word-spacing. Properties that cannot
+          be inherited are background, border, display, float and clear, 
+          height and width, margin, min- and max-height and -width, outline,
+          overflow, padding, position, text-decoration, vertical-align and
+          z-index.
+          </p>
+          <p>
+          Inheritance prevents certain properties from being declared over
+          and over again in a style sheet, allowing the software developers
+          to write less CSS. It enhances faster-loading of web pages by 
+          users and enables the clients to save money on bandwidth and 
+          development costs.
+          </p>
+          <p>
+          Inheritance relies on the document tree, which is the hierarchy 
+          of (X)HTML elements in a page based on nesting.
+          </p>
+        </article>
+        <article class="insidebox">
+          <header><h2>CSS Styling</h2></header>       
+          <p>
+          <strong>Inline Styling</strong> - To use inline styles, add the 
+          style attribute to the relevant tag. An inline style loses many
+          of the advantages of a style sheet (by mixing content with 
+          presentation). Use this method sparingly! The style attribute
+          can contain any CSS property. The example shows how to change 
+          the color and the left margin of a h1 element:
+          <p>
+          &lt;h1 style="color:blue;margin-left:30px;"&gt;This is a heading.&lt;/h1&gt;
+          </p>
+          <p>
+          <strong>Internal Style Sheet</strong> - An internal style sheet 
+          should be used when a single document has a unique style. You 
+          define internal styles in the head section of an HTML page, 
+          inside the &lt;style&gt; tag, like this:
+          </p>
+          <p>
+          &lt;head&gt;<br>
+          &nbsp; &nbsp; &nbsp; &nbsp; &lt;style&gt;<br>
+          &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;body {<br>
+          &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; 
+          &nbsp; &nbsp; &nbsp;background-color: linen; <br>
+          &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; } <br>
+          &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; h1 { <br>
+          &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;
+          &nbsp; &nbsp; &nbsp;color: maroon; <br>
+          &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; 
+          &nbsp; &nbsp; &nbsp;margin-left: 40px; <br>
+          &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; } <br>
+          &nbsp; &nbsp; &nbsp; &nbsp; &lt;/style&gt; <br>
+          &lt;head&gt;
+          </p>
+          <p>
+          <strong>External Style Sheets</strong> - An external style sheet
+          is ideal when the style is applied to many pages. With an 
+          external style sheet, you can change the look of an entire Web
+          site by changing just one file.
+          </p>
+          <p>
+          Each page must include a link to the style sheet with the 
+          &lt;link&gt; tag. The &lt;link&gt; tag goes inside the head section:
+          </p>
+          <p>
+          &lt;head&gt;<br>
+          &nbsp; &nbsp; &nbsp; &nbsp; &lt;link rel="stylesheet" 
+          type="text/css" href="mystyle.css"&gt;<br>
+          &lt;/head&gt;
+          </p>
+        </article>
+        <article class="insidebox">
+          <header><h2>Box Sizing</h2></header>        
+          <p>
+          The four main points to remember about box-sizing:
+          </p>
+          <ol>
+            <li>HTML elements are boxes and each box has 4 components</li>
+            <li>Because there are so many components to each box, it 
+            can often be hard to get the size of a box just right.
+            </li>
+            <li>There are two techniques you can use to help deal with
+            sizing issues.</li>
+              <ol class="b">
+                <li>Set sizes in terms of percents rather than pixels.</li>
+                <li>Set the box-sizing attribute to border-box for 
+                every element
+                </li>
+              </ol>
+            <li>Different browsers work slightly differently. Sometimes
+            this causes different browsers to display the same code 
+            differently.
+            </li>
+          </ol>
+        </article>
+        <article class="insidebox">
+          <header><h2>Box Positioning</h2></header>
+          <ol>
+            <li>Divs are block elements (as opposed to inline), so by 
+            default they take up the entire width of a page.
+            </li>
+            <li>Adding the rule display: flex; to the appropriate CSS
+            will override this behavior and let divs appear next to 
+            each other.
+            </li>
+            <li>A complete guide to 
+            <a href="http://css-tricks.com/snippets/css/a-guide-to-flexbox/">
+            flexbox</a></li>
+          </ol>
+        </article>  
+        <article class="insidebox">
+          <header><h2>Code, Test, Refine</h2></header>
+          <p>
+          Get the structure of the page right. You should be able to do 
+          that from the design by visually boxifying it, then move on to
+          work on the tags, i.e., if something needs to be a heading, 
+          make it so. Then think about the size of the boxes (how big 
+          should they be) and then think about positioning the boxes so 
+          that they are where you want them on the screen.  Once the general
+          layout is complete, then begin looking at the smaller details.
+          </p>
+          <p>
+          Steps:
+          </p>
+          <ol>
+            <li>Look for natural boxes</li>
+            <li>Look for repeated styles & semantic elements</li>
+            <li>Write your html</li>
+            <li>Apply your styles from biggest to smallest.</li>
+            <li>Fix things</li>
+          </ol>
+        </article>
+        <article class="insidebox">
+          <header><h2>HTML/CSS Validation</h2></header>
+          <p>
+          To verify <a href="http://validator.w3.org/#validate_by_input">HTML</a><br>
+          To verify <a href="http://jigsaw.w3.org/css-validator/#validate_by_input">CSS</a>
+          </p>      
+        </article>
+      </section>
+    </body>
+</html>
