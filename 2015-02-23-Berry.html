@@ -2,7 +2,7 @@
     <head>
       <title>Notes to Intro to Programming</title>
       <meta charset="utf-8">
-      <link rel="stylesheet" type="text/css" href="feb21style.css">
+      <link rel="stylesheet" type="text/css" href="feb23style.css">
     </head> 
     <body class="bigboxstyle">  
       <section class="outsidebox">
@@ -316,71 +316,6 @@
           </p>
         </article>
         <article class="insidebox">
-          <header><h2>CSS Specificity</h2></header>
-          <p>
-          <em>Specificity</em> describes the relative weights of various rules. 
-          It determines which styles are applied to an element when more than one
-          rule could apply. Based on specification, a simple selector (e.g., H1) 
-          has a specificity of 1, class selectors have a specificity of 1,0, and ID
-          selectors a specificity of 1,0,0. Because the specificity values do not
-          carry over as in the decimal system, commas are used to separate the 
-          "digits"
-          </p>
-          <p>
-          The priority of a selector (specificity)        
-          </p>
-          <ol>
-            <li>0, 0, 0, 0</li>
-              <ol class="b">
-                <li>1st digit (starting from the left)</li>
-                <ol class="a">
-                  <li>Inline styles?</li>
-                </ol>
-                <li>2nd digit</li>
-                <ol class="a">
-                  <li># of ID selectors</li>
-                </ol>  
-                <li>3rd digit</li>
-                <ol class="a">
-                  <li># of class selectors</li>
-                </ol>
-                <li>4th digit</li>
-                <ol class="a">
-                  <li># of element selectors</li>
-                </ol>
-            </ol>
-            <li>Example</li>
-              <ol class="b">
-                <li>p { color: #fff; } 0, 0, 0, 1</li>
-                  <ol class="a">
-                    <li>no inline styles</li>
-                    <li>no id selector</li>
-                    <li>no class selector</li>
-                    <li>does have an element selector</li>
-                  </ol>
-                <li>.intro { color: #98c7d4 } 0, 0, 1, 0</li>
-                <li>If you compare the above 2 selectors, the .intro
-                element will have a higher specificity
-                  <ol class="a">
-                    <li>no inline styles</li>
-                    <li>no id selector</li>
-                    <li>Does have a class selector</li>
-                    <li>No element selector</li>
-                  </ol>
-                <li>The number to the left will have the higher 
-                priority so that an inline style would take precedence
-                of an external style; an id selector would take priority
-                over a class selector; a class selector would take 
-                priority over an element selector.
-                <li>The ! important selector overrides and takes precedent 
-                over all of the above. 
-                  
-                  
-                </li>
-              </ol>         
-          </ol>
-        </article>
-        <article class="insidebox">
           <header><h2>CSS Inheritance</h2></header>
           <p>
           Inheritance is a key feature in CSS, it relies on the 
@@ -474,13 +409,7 @@
             can often be hard to get the size of a box just right.
             </li>
             <li>There are two techniques you can use to help deal with
-            sizing issues.</li>
-              <ol class="b">
-                <li>Set sizes in terms of percents rather than pixels.</li>
-                <li>Set the box-sizing attribute to border-box for 
-                every element
-                </li>
-              </ol>
+            sizing issues: (1) Set sizes in terms of percents rather than pixels. (2) Set the box-sizing attribute to border-box for every element</li>
             <li>Different browsers work slightly differently. Sometimes
             this causes different browsers to display the same code 
             differently.
