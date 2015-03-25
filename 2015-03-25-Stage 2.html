@@ -1,14 +1,15 @@
-<!DOCTYPE html><html>     
+<!DOCTYPE html>
+<html>     
     <head>
       <title>Notes to Intro to Programming</title>
       <meta charset="utf-8">
-      <link rel="stylesheet" type="text/css" href="feb23style.css">
+      <link rel="stylesheet" type="text/css" href="2015stage2.css">
     </head> 
     <body class="bigboxstyle">  
       <section class="outsidebox">
-        <header><h1>Lesson 1: The Basics of the Web and HTML</h1></header>
+        <header><h1>Stage 1 - The Basics of the Web and HTML</h1></header>
         <article class="insidebox">
-          <header><h2>How the Web Works</h2></header>
+          <header><h2> How the Web Works </h2></header>
           <p><em>The World Wide Web</em> is the name given to all of the
           computers able to communicate with each other via the world's
           largest network, called the Internet. When a person types in a
@@ -155,7 +156,7 @@
         </article>
       </section>  
       <section class="outsidebox">
-        <header><h2>Lesson 2: Creating a Structured Document with HTML</h2></header>
+        <header><h2>Stage 1 - Creating a Structured Document with HTML</h2></header>
         <article class="insidebox">
           <header><h2>Web page Elements</h2></header>
           <p>
@@ -259,7 +260,7 @@
         </article>
       </section>
       <section class="outsidebox">
-        <header><h1>Lesson 3: Adding Style to Structure with CSS</h1></header>
+        <header><h1>Stage 1 - Adding Style to Structure with CSS</h1></header>
         <article class="insidebox">
           <header><h2>CSS Introduction</h2></header>
           <p>
@@ -460,6 +461,418 @@
           To verify <a href="http://jigsaw.w3.org/css-validator/#validate_by_input">CSS</a>
           </p>      
         </article>
-      </section>
-    </body>
+     </section>
+  >  <section class="outsidebox">
+        <header><h1>STAGE 2: Intro to Python</h1>
+        </header>
+        <article class="insidebox">
+          <header><h2>Intro to Python Programming</h2></header>
+          <p>Python comments are made with '#' </p>
+            <article class="pybox"> 
+                      
+              # This is a Python comment. Lines that begin with a '#' are ignored by the<br>
+              # Python interpreter. Comments are useful for documenting code or explaining what the function is!<br>
+            </article>
+        </article>
+        <article class="insidebox">
+          <header><h2>Pyton Basics</h2></header>
+          <p> EXAMPLE 1: Lists can contain strings</p>
+            <article class="pybox"> 
+              <header>Python comments are made with '#'</header>
+              string_list = ['HTML', 'CSS', 'Python']<br>
+              print string_list<br>
+              #['HTML', 'CSS', 'Python']<br>
+            </article>
+          
+          <p> EXAMPLE 2: Lists can contain numbers</p>
+            <article class="pybox"> 
+              <header></header>
+              number_list = [3.14159, 2.71828, 1.61803]<br>
+              print number_list<br>
+              #[3.14159, 2.71828, 1.61803]<br>
+            </article>
+          <header></header>
+          <p> EXAMPLE 3: Lists can be 'accessed' and 'sliced'</p>
+            <article class="pybox"> 
+              <header></header>
+              pi = number_list[0]<br>
+              ot_pi = number_list[1:]<br>
+              print pi<br>
+              print not_pi<br>
+              #3.14159<br>
+              #[2.71828, 1.61803]<br>
+            </article>
+          <p> EXAMPLE 4: Lists can contain strings AND numbers</p>
+            <article class="pybox"> 
+              <header></header>
+              mixed_list = ['Hello!', 42, "Goodbye!"]<br>
+              print mixed_list<br>
+              #['Hello!', 42, 'Goodbye!']<br>
+            </article>
+          <p> Example 5: Lists can even contain other lists</p>
+            <article class="pybox"> 
+              <header></header>
+              list_with_lists = [3, 'colors:', ['red', 'green', 'blue'], 'your favorite?']<br>
+              print list_with_lists<br>
+              #[3, 'colors:', ['red', 'green', 'blue'], 'your favorite?']<br>
+            </article>
+        </article>
+        <article class="insidebox">
+          <header><h2>Python Variables</h2></header>
+          <p>Given a variable that takes as an imput a number, representing a month, and returns the number of days in that month </p>
+            <article class="pybox"> 
+              <header></header>
+              days_in_month = [31,28,31,30,31,30,31,31,30,31,30,31]<br>
+              <br>
+              def how_many_days(n):<br>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return days_in_month[n-1]<br><br>
+              <br>
+              print how_many_days(1)<br>
+              #>>> 31<br>
+              <br>
+              print how_many_days(9)<br>
+              #>>> 30<br>
+            </article>
+        </article>
+        <article class="insidebox">
+          <header><h2>Nested Lists</h2></header>
+          <p>Every entry in the following list is itself a list </p>
+            <article class="pybox"> 
+              <header></header>
+              nested_list = [['HTML', 'Hypertext Markup Language forms the structure of webpages'],<br>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;['CSS' , 'Cascading Style Sheets give pages style'],<br>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;['Python', 'Python is a programming language'],<br>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;['Lists', 'Lists are a data structure that let you organize information']]<br>
+              <br>
+              first_concept = nested_list[0]<br>
+              <br>
+                            <br>
+              print first_concept <br>
+              <br><br>
+              #['HTML', 'Hypertext Markup Language forms the structure of webpages']<br>
+              
+              <p style="color:black">==>Since first_concept was itself a list, we can access it's elements</p>
+              first_title = first_concept[0]<br>
+              first_description = first_concept[1]<br>
+              <br>
+              print first_title<br>
+              print first_description<br>
+              <br>
+              <br>
+              #HTML<br>
+              #Hypertext Markup Language forms the structure of webpages<br>
+              <br>
+              <br>
+              
+              <br>
+              <br>
+            </article>
+        </article>
+                <article class="insidebox">
+          <header><h2>Variables</h2></header>
+          <p>Given the variable countries defined as </p>
+            <article class="pybox"> 
+              <header></header>
+              Name    Capital  Populations (millions)<br>
+              <br>
+              countries = [['China','Beijing',1350],<br>
+                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;         ['India','Delhi',1210],<br>
+                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;     ['Romania','Bucharest',21],<br>
+                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;     ['United States','Washington',307]]<br>
+
+              <br><br>
+              <br>
+             <p style="color:black">==>Lets write the code to print out the capital of India by accessing the above array</p>
+
+              print countries[1] [2]<br>
+              India 1210<br>
+              <br><br>  
+              <br>
+              <p style="color:black">==>We can do math on list.</p>
+
+              
+              <br><br>  
+              <br>
+
+              <p style="color:black">How to find multiple of Romania's population is the population of    China.</p>
+              
+
+              u=(countries[0][2] / countries[2][2])<br>
+              print u<br>
+              64<br>
+              <br><br>  
+              <br>
+              <p># How to REPLACE an element in a list.</p>
+              
+              <br>
+              stooges = ['Moe','Larry','Curly']<br>
+              <p>We can replace Curly with Shemp</p>
+
+              stooges[2]='Shemp'<br>
+              print stooges<br>
+              ['Moe', 'Larry', 'Shemp']<br>
+
+            </article>
+        </article>
+        <article class="insidebox">
+          <header><h2>Proceedures</h2></header>
+          <p>Examples of defining a proceedure.  A proceedure takes an input, and returns an output. </p>
+            <article class="pybox"> 
+              <header></header>
+              <p>This procedure, replace_spy, will take as it's input a list of 3 numbers and then modifies the value of the 3rd element in the input list to be the one more than it's previous value.</p>
+
+
+              spy = [0,0,7]<br>
+
+              def replace_spy(x):<br>
+               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  x[2]=x[2]+1<br>
+
+              <p> In the test below, the first line calls your procedure which will change spy, and the second checks you have changed it. </p>
+
+              replace_spy(spy)<br>
+              print spy<br>
+              [0,0,8]<br>
+
+              <p style="color:black"> This procedure, sum_list, takes as its input a list of numbers, and returns the sum of all the elements in the input list.</p>
+
+
+    
+              def sum_list(p):<br>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    result = 0<br>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    for e in p:<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;      result = result + e<br>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  return result<br>
+              <br>
+              print sum_list([1, 7, 4])<br>
+              12<br>
+              <br>
+              print sum_list([9, 4, 10])<br>
+              23<br>
+              <br>
+              print sum_list([44, 14, 76])<br>
+              134<br>
+              <br>
+              
+              <p>Proceedures with Strings</p>
+              <p>This procedure,measure_udacity, takes as its input a list of strings, and returns a number that is a count of the number of elements in the input list that start with the uppercase # letter 'U'.</p>
+
+  
+
+              def measure_udacity(U):<br>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;count = 0<br>
+               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;for e in U:<br>
+               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if e[0] == 'U':<br>
+               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;count = count + 1<br>
+               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   return count       <br>
+
+              <br><br>
+
+              print measure_udacity(['Dave','Sebastian','Katy'])<br>
+              #>>> 0<br>
+              <br>
+              print measure_udacity(['Umika','Umberto'])<br>
+              #>>> 2<br>
+              <br>
+
+              <p>This procedure, find_element, will take as its inputs a list and a value of any type, and returns the index of the first element in the input list that matches the value.  If there is no matching element, then it will return -1.</p>
+
+
+
+              def find_element(p,t):<br>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  if t not in p:<br>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    return -1<br>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  return p.index(t)<br>
+              <br>
+              <br>
+              print find_element([1,2,3],3)<br>
+              2<br>
+              <br>
+              print find_element(['alpha','beta'],'gamma')<br>
+              -1<br>
+              <br>
+
+              <p>This procedure, find_element, using index that takes as its inputs a list and a value of any type, and returns the index of the first element in the input list that matches the value.</p>
+
+              <p>If there is no matching element, return -1.</p>
+              <br>
+              def find_element(a,b):<br>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   if b in a:<br>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return a.index(b)<br>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  return -1<br>
+              <br>
+              <br>
+
+              print find_element([1,2,3],3)<br>
+              2<br>
+              </article>
+          </article>
+          <article class="insidebox">
+          <header><h2>Adding and Appending</h2></header>
+          <p>This section refers to adding and appending to lists </p>
+            <article class="pybox"> 
+              <header></header>
+              <p>These examples will show differing ways of appending to lists.</p>
+
+              list1 = [1,2,3,4]<br>
+              list2 = [1,2,3,4]<br>
+              <br>
+              list1 = list1 + [5]<br>
+              list2.append(5)<br>
+              <br>
+              <p>One can see that both operations will append to the list.</p>
+              <br>
+              print list1<br>
+              print list2<br>
+              <br>
+              [1,2,3,4,5]<br>
+              [1,2,3,4,5]<br>
+              <br>
+              <p>Nothing is different between these two pieces of code?</p>
+              <br>
+              def proc(mylist):<br>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;mylist = mylist + [6]<br>
+              <br>
+              def proc2(mylist):<br>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;mylist.append(6)<br>
+              <br>
+
+              <br>
+              print list1<br>
+              [1,2,3,4,5]<br>
+              <br>
+              proc(list1)<br>
+              print list1<br>
+              [1,2,3,4,5]<br>
+              <br>
+              print list2<br>
+              [1,2,3,4,5]<br>
+              <br>
+              proc2(list2)<br>
+              print list2<br>
+              [1,2,3,4,5,6]<br>
+              <br><br>
+              <p>Python has a special assignment syntax: +=.  Here is an example:</p>
+
+
+              list3 = [1,2,3,4]<br>
+              list3 += [5]<br>
+              <br>
+              [1,2,3,4,5]<br>
+
+              <p>There are three ways of mutation</p>
+
+              list1 = list1 + [7,8,9]<br>
+              list2.append([7,8,9])<br>
+              list3 += [7,8,9]<br>
+               <br>   
+              <br>
+              print list1<br>
+              [1,2,3,4,5,6,7,8,9]<br>
+              <br>
+              print list2<br>
+              [1,2,3,4,5,6,[7,8,9]]<br>
+              <br>
+              print list3<br>
+              [1,2,3,4,5,6,7,8,9]<br>
+              <br>
+              <p>This procedure list_test which takes three lists as inputs. Will mutate the first input list to include 'a' as the last entry, mutate the second to include the entries 'a', 'b', 'c' and finally the last list will not be mutated but a copy will be returned with the additional entry 'w'.</p>
+              <br>
+              def list_test(first_input,second_input,third_input):<br>
+               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   first_input.append('a')<br>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    second_input+=['a','b','c']<br>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    list_test = third_input+['w']<br>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    return list_test<br>
+              <br><br>
+              first_input = [1,2,3]<br>
+              second_input = [4,5,6]<br>
+              third_input = [7,8,9]<br>
+              <br>
+              print list_test(first_input, second_input, third_input)<br>
+              [7,8,9,'w']<br>
+              <br>
+              print first_input<br>
+              [1,2,3,'a']<br>
+              <br>
+              print second_input<br>
+              [4,5,6,'a','b','c']<br>
+              <br>
+              print third_input<br>
+              #>>> [7,8,9]<br>
+              <br>
+
+              <p>This procedure, product_list, takes as input a list of numbers, and returns a number that is the result of multiplying all those numbers together.</p>
+              <br>
+              def product_list(a):<br>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    total=1<br>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    while a:<br>
+               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;       x=a.pop()<br>
+               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;       total=total * x<br>
+               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   return total<br>
+              <br>     
+
+              print product_list([9])<br>
+              >>> 9<br>
+              <br>
+              print product_list([1,2,3,4])<br>
+              >>> 24<br>
+              <br>
+              print product_list([])<br>
+              >>> 1<br>
+              <br>
+
+
+              <p>This procedure, greatest, that takes as input a list of positive numbers, and returns the greatest number in that list. If the input list is empty, the output should be 0.</p>
+              <br>
+              def greatest(l):<br>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    g=0<br>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    for e in l:<br>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;        if(e>g):<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;g=e<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;      return g     <br>  
+              <br>
+              print greatest([4,23,1])<br>
+              >>> 23<br>
+              <br>
+              print greatest([])<br>
+              >>> 0<br>
+              <br>
+          </article>
+        </article>
+        <article class="insidebox">
+          <header><h2>Automation</h2></header>
+          <p>Examples of creating HTML code using python.  In these examples, we will reuse some of the code from the previous work session to make a new function that creates HTML from a list whose entries are a title and a description. </p>
+            <article class="pybox"> 
+              <p>This is the "generate_concept_HTML" function from the previous work_session. You don't need to modify it (though you are welcome to change it to accomodate whatever HTML structure you are using).</p>
+              
+              
+              def generate_concept_HTML(concept_title, concept_description):<br>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    html_text_1 = '''<br>
+              &lt;div class="concept"&gt;<br>
+               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   &lt;div class="concept-title"&gt;<br>
+               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;       ''' + concept_title<br>
+               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   html_text_2 = '''<br>
+               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   &lt;/div&gt;<br>
+               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   &lt;div class="concept-description"&gt;<br>
+               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;      ''' + concept_description<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  html_text_3 = '''<br>
+               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   &lt;/div&gt;<br>
+              &lt;/div&gt;'''<br>
+                 <br>
+               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   full_html_text = html_text_1 + html_text_2 + html_text_3<br>
+               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   return full_html_text<br>
+              <br>
+              print generate_concept_HTML("Hello", "This is sweet")<br>
+              <br>
+              &lt;div class="concept"&gt;<br>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   &lt;div class="concept-title"&gt;<br>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;        Hello<br>
+               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   &lt;/div&gt;<br>
+               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   &lt;div class="concept-description"&gt;<br>
+               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;       This is sweet<br>
+               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  &lt;/div&gt;<br>
+              &lt;/div&gt;<br>
+        </article>
+      </article>    
+    </section>
+  </body>
 </html>
