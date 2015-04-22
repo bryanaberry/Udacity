@@ -3,7 +3,7 @@
     <head>
       <title>Notes to Intro to Programming</title>
       <meta charset="utf-8">
-      <link rel="stylesheet" type="text/css" href="2015stage2.css">
+      <link rel="stylesheet" type="text/css" href="2015stage3.css">
     </head> 
     <body class="bigboxstyle">  
       <section class="outsidebox">
@@ -462,13 +462,15 @@
           </p>      
         </article>
      </section>
-  >  <section class="outsidebox">
+   <section class="outsidebox">
         <header><h1>STAGE 2: Intro to Python</h1>
         </header>
         <article class="insidebox">
+          <h2></h2>
+          <article class="pybox"> 
           <header><h2>Intro to Python Programming</h2></header>
           <p>Python comments are made with '#' </p>
-            <article class="pybox"> 
+            
                       
               # This is a Python comment. Lines that begin with a '#' are ignored by the<br>
               # Python interpreter. Comments are useful for documenting code or explaining what the function is!<br>
@@ -477,8 +479,7 @@
         <article class="insidebox">
           <header><h2>Pyton Basics</h2></header>
           <p> EXAMPLE 1: Lists can contain strings</p>
-            <article class="pybox"> 
-              <header>Python comments are made with '#'</header>
+            <article class="pybox">
               string_list = ['HTML', 'CSS', 'Python']<br>
               print string_list<br>
               #['HTML', 'CSS', 'Python']<br>
@@ -486,7 +487,7 @@
           
           <p> EXAMPLE 2: Lists can contain numbers</p>
             <article class="pybox"> 
-              <header></header>
+              <h3></h3>
               number_list = [3.14159, 2.71828, 1.61803]<br>
               print number_list<br>
               #[3.14159, 2.71828, 1.61803]<br>
@@ -494,7 +495,7 @@
           <header></header>
           <p> EXAMPLE 3: Lists can be 'accessed' and 'sliced'</p>
             <article class="pybox"> 
-              <header></header>
+              <h3></h3>
               pi = number_list[0]<br>
               ot_pi = number_list[1:]<br>
               print pi<br>
@@ -504,14 +505,14 @@
             </article>
           <p> EXAMPLE 4: Lists can contain strings AND numbers</p>
             <article class="pybox"> 
-              <header></header>
+              <h3></h3>
               mixed_list = ['Hello!', 42, "Goodbye!"]<br>
               print mixed_list<br>
               #['Hello!', 42, 'Goodbye!']<br>
             </article>
           <p> Example 5: Lists can even contain other lists</p>
             <article class="pybox"> 
-              <header></header>
+              <h3></h3>
               list_with_lists = [3, 'colors:', ['red', 'green', 'blue'], 'your favorite?']<br>
               print list_with_lists<br>
               #[3, 'colors:', ['red', 'green', 'blue'], 'your favorite?']<br>
@@ -872,7 +873,244 @@
                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  &lt;/div&gt;<br>
               &lt;/div&gt;<br>
         </article>
-      </article>    
+      </article>
     </section>
-  </body>
+
+
+
+    <section class="outsidebox">
+        <header>
+            <h1>Stage 3 - Object Oreinted Programming</h1></header>
+        <article class="insidebox">
+            <header>
+                <h2> What is OOP ? </h2></header>
+            <p><em>Object-oriented programming</em> (OOP) is a programming paradigm based on the concept of "objects", which are data structures that contain data, in the form of fields, often known as attributes; and code, in the form of procedures, often known
+                as methods. <i>From Wikipedia</i></p>
+
+
+            <p>Why we even need OPP? It is because of the maintainability problem. Any large codebase has to be just as maintainable as small codebase. Since, OOP features decoupling, modularity, reuse, etc., it helps developing maintainable code. Also, nowadays
+                performance issues are often neglected in favor of maintainability because with advanced algorithms and faster hardware, performance issues can be limited to an acceptable level.</p>
+
+            <p>However, there are projects for which different programming paradigms are preferred. Primarily because these projects have different goals. For instance, functional reactive programming have come to fashion for event-based and asynchronous systems
+                development.
+            </p>
+
+            <p>So, to answer the "why" question, OOP is the most popular programming paradigm in use today. OOP programmers can sectionalize and break down projects into reusuable components.</p>
+            <p><em>Object</em> - In the class-based object-oriented programming paradigm, "object" refers to a particular instance of a class where the object can be a combination of variables, functions, and data structures.<i>From Wikipedia</i></p>
+            <p><em>Class</em> - In object-oriented programming, a class is an extensible program-code-template for creating objects, providing initial values for state (member variables) and implementations of behavior (member functions, methods). In many languages,
+                the class name is used as the name for the class (the template itself), the name for the default constructor of the class (subroutine that creates objects), and as the type of objects generated by the type, and these distinct concepts are easily
+                conflated. When an object is created by a constructor of the class, the resulting object is called an instance of the class, and the member variables specific to the object are called instance variables, to contrast with the class variables shared
+                across the class.<i>From Wikipedia</i></p>
+            <p><em>Instance</em> - In object-oriented programming (OOP), an instance is a specific realization of any object. Formally, "instance" is synonymous with "object" as they are each a particular value (realization), and these may be called an instance
+                object; "instance" emphasizes the distinct identity of the object. The creation of a realized instance is called instantiation.<i>From Wikipedia</i></p>
+            <p><em>Method</em> - A method (or message) in object-oriented programming (OOP) is a procedure associated with an object class. An object is made up of behavior and data. Data is represented as properties of the object and behavior as methods. Methods
+                are also the interface an object presents to the outside world. For example a window object would have methods such as open and close. One of the most important capabilities that a method provides is method overriding. The same name (e.g., area)
+                can be used for multiple different kinds of classes. This allows the sending objects to invoke behaviors and to delegate the implementation of those behaviors to the receiving object. For example an object can send an area message to another object
+                and the appropriate formula will be invoked whether the receiving object is a rectangle,circle, triangle, etc. Methods also provide the interface that other classes use to access and modify the data properties of an object. This is known as encapsulation.
+                Encapsulation and overriding are the two primary distinguishing features between methods and procedure calls.<i>From Wikipedia</i></p>
+            <p><em>Module</em> - Modular programming is a software design technique that emphasizes separating the functionality of a program into independent, interchangeable modules, such that each contains everything necessary to execute only one aspect of
+                the desired functionality. A module interface expresses the elements that are provided and required by the module. The elements defined in the interface are detectable by other modules. The implementation contains the working code that corresponds
+                to the elements declared in the interface. Modular programming is closely related to structured programming and object-oriented programming, all having the same goal of facilitating construction of large software programs and systems by decomposition
+                into smaller pieces, and all originating around the 1960s. While historically usage of these terms has been inconsistent, today "modular programming" refers to high-level decomposition of the code of an entire program into pieces, structured programming
+                to the low-level code use of structured control flow, and object-oriented programming to the data use of objects, a kind of data structure.<i> From Wikipedia</i></p>
+            <p><em>Library</em> - In computer science, a library is a collection of non-volatile resources used by computer programs, often to develop software. These may include configuration data, documentation, help data, message templates, pre-written code
+                and subroutines, classes, values or type specifications. <i> From Wikipedia</i></p>
+
+            <p><em>Class Variables</em> - Class variables are shared in the sense that they are accessed by all objects (instances) of that class. There is only copy of the class variable and when any one object makes a change to a class variable, the change is
+                reflected in all the other instances as well. <i> From http://www.ibiblio.org/</i></p>
+
+            <p><em>Inheritance</em> - In object-oriented programming (OOP), inheritance is when an object or class is based on another object or class, using the same implementation (inheriting from a class) specifying implementation to maintain the same behavior
+                (realizing an interface; inheriting behavior). It is a mechanism for code reuse and to allow independent extensions of the original software via public classes and interfaces. The relationships of objects or classes through inheritance give rise
+                to a hierarchy. <i> From Wikipedia</i></p>
+
+            <p><em>Method Overriding</em> - Method overriding and overloading are two of the most significant ways that a method differs from a conventional procedure or function call. Overriding refers to a subclass redefining the implementation of a method of
+                its superclass. For example findArea may be a method defined on a shape class. The various subclasses: rectangle, circle, triangle, etc. would each define the appropriate formula to calculate their area. The idea is to look at objects as "black
+                boxes" so that changes to the internals of the object can be made with minimal impact on the other objects that use it. This is known as encapsulation and is meant to make code easier to maintain and re-use. Method overloading on the other hand
+                refers to differentiating the code used to handle a message based on the parameters of the method. If one views the receiving object as the first parameter in any method then overriding is just a special case of overloading where the selection
+                is based only on the first argument. The following simple Java example illustrates the difference. <i> From Wikipedia</i></p>
+
+        </article>
+        <article class="insidebox">
+            <header>
+                <h2>Functions</h2></header>
+                <article class="pybox"> 
+              <header><strong>Take a Break</strong></header>
+            <p>
+                 In this lesson, we learned about functions in Pyton. The code below is called take a break. Inwhich after a certain amount of time a website opens.
+            </p>
+                  <p> In order for this function to work, we need to import two important MODULES.  Time and Webbrowser.  These will give us the ability to both use time and browser funtions.</p>
+
+            import webbrowser<br> 
+            import time <br> 
+            rest=1<br> 
+            while rest =3:<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;time.sleep(7)<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; webbrowser.open("https://www.python.org/downloads/release/python-279")<br>  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; rest=rest+1
+                <br>
+                <header><strong>Prank</strong></header>
+              <p>In this lesson, about more python Modules. The code below is called "prank". In which the function is called to change file names.
+            </p>
+                  <p> In order for this function to work, we need to import another important MODULE.  The module OS has several callable funtions such as "listdir", "getcwd", "chdir" and "rename".  These will give us the ability to both access the Operating System and make changes to file names in the folder.</p>
+
+                  
+import os<br><br>
+                  
+def rename():<br><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    filelist = os.listdir(r"/Users/bryanberry/Documents/Nano Notes/prank")<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;print (filelist)<br>
+   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; savedpath = os.getcwd()<br>
+   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; #os.getcwd changes working directory<br>
+   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; print("Current Working Directory is "+savedpath)<br>
+   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; os.chdir(r"/Users/bryanberry/Documents/Nano Notes/prank")<br>
+   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; #os.chdir changes directory<br>
+   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; # Next we will change the file name<br>
+   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; for filename in filelist:<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    print("Old Name - "+filename)<br>
+     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   print("New Name - "+filename.translate(None,"0123456789"))<br>
+     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   os.rename(filename, filename.translate(None,"0123456789"))<br>
+   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; os.chdir(savedpath)<br>
+<br>
+rename()<br>
+<br><br><br>        
+          </article>
+          </article>
+          <article class="insidebox">
+            <header>
+                <h2>Classes</h2></header>
+                <article class="pybox"> 
+              <header><strong>Turtle</strong></header>
+              <p>In the turtle funtion, we are now going to call upon a CLASS of Turtle.  So the function is "turtle" and the class is "Turtle".  Inside the class Turtle we will call we will call upon some of the METHODS.  "Shape", "Color" and "speed" are all methods of the class Turtle.</p>  
+                  <p> In the python code below, we created an INSTANCE or OBJECT of class Turtle called BRAD and ANGIE.</p>
+                  
+                  
+import turtle<br>
+<br>
+def drawsquare(someturtle):<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    for I in range(1,5):<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;       someturtle.forward(100)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;      someturtle.right(90)<br>
+<br>
+def drawart():<br>        
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    window = turtle.Screen()<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    window.bgcolor("red")<br>
+    <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    brad = turtle.Turtle()<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    brad.shape("turtle")<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    brad.color("yellow")<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    brad.speed(1)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    for i in range(1,50):<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;        drawsquare (brad)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;        brad.right(5)<br>
+<br>
+    <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    window.exitonclick()<br>
+<br>
+drawart()<br>         
+              
+            <header><strong>Twillio</strong></header>     
+            <p> This is the funnest lesson.  How to use pyton to SMS Text someone.  This opens a bunch of possibilities for me.</p>
+            <p>In order to send texts I needed to Download and install Twilio. From the code below one can see the first line of "from twilio.rest import TwilioRestClient".  This line opens the "twilio" module, finds the class (folder) "rest" and imports the module "TwilioRestClient".</p>
+                  
+                  
+from twilio.rest import TwilioRestClient<br>
+ <br>
+# Your Account Sid and Auth Token from twilio.com/user/account<br>
+account_sid = "AC0d3a247bfeb1a8196414a3e0273f71f7"<br>
+auth_token  = "XXXXXXXXXXXXXXXXXXXXX"(placed xxx's to protect my account)<br>
+client = TwilioRestClient(account_sid, auth_token)<br>
+ <br>
+message = client.messages.create(body="I am insane",<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    to="+18103352205",    <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    from_="+18102789016") <br>
+print message.sid                 <br>
+                  
+                  
+        <header><strong>Profanity</strong></header>     
+            <p> In this lesson we will use "open" module, which is a built-in function</p>
+            <p>We also use the module "urlopen" in the class "urllib"</p>         
+                  
+                  
+import urllib<br>
+<br>
+def readtext():<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    quotes = open("/Users/bryanberry/Documents/Nano Notes/Stage 3 Notes/moviequotes.txt")<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    contentsoffile = quotes.read()<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    #print(contentsoffile)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    quotes.close()<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    checkprofanity(contentsoffile)<br>
+<br>
+<br>
+<br>
+def checkprofanity(text2check):<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    connection = urllib.urlopen("http://www.wdyl.com/profanity?q=shot" + text2check)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    output = connection.read()<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    #print (output)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    connection.close()<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    if "true" in output:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;        print ("Profanity alert!!!!!!!")<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    elif "false" in output:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;        print (" this document has no curse words!")<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    else:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;        print("could not scan the document properly")<br>
+<br><br>
+
+readtext()<br>
+              </article>
+            </article>
+            
+            <article class="insidebox">
+            <header>
+                <h2>Creating Classes</h2></header>
+                <article class="pybox"> 
+              <header><strong>Movies</strong></header>            
+            
+            
+            <p> In this lesson we will build our own CLASSES.  </p>
+            <p>The Goal is to create reusable classes that keep a template. This will allow flexiblity and condensed code to create a movie website. In the code below, I created a new class file, called "movie", with class "Movie.   In this class, I had to create the funtion "__init__".  I created a CONSTRUCTOR for SELF.  This will inialize all the variables required for the movie site. By placing "self" in front of the variable, we make this a 'constructor variable', which will assign any movie class we create with this template of varibles.</p>
+                  
+                  <p> Also, you will see "import webbrowser" in the movie.py, this will allow to open URL's in this class. Show_trailer is an "instance varible".</p>
+      
+import webbrowser<br>
+<br>
+class Movie():<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    def __init__(self, movie_title, movie_storyline, poster_image, trailer_youtube):<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;        self.title = movie_title<br>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;      self.storyline = movie_storyline<br>
+   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;     self.poster_image_url = poster_image<br>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;      self.trailer_youtube_url = trailer_youtube<br>
+<br>
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   def show_trailer(self):<br>
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;       webbrowser.open(self.trailer_youtube_url)   <br>              
+                  <br>
+                  
+                  <p>This code below illustrates INHERITANCE</p>
+                  
+                  
+                  <p>In the code below, this shows how we can use class inheritance to propogate behavior of parent classes.</p>
+                  
+class Parent():<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    def __init__(self, last_name, eye_color):<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;        print("Parent Constructor Called")<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;        self.last_name = last_name<br>
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;       self.eye_color = eye_color<br>
+<br>
+<br>
+class Child(Parent):<br>
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   def __init__(self, last_name, eye_color, number_of_toys):<br>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;      print("Child Constructor Called")<br>
+   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;     Parent.__init__(self, last_name, eye_color)<br>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;      self.number_of_toys = number_of_toys<br>
+        <br><br>
+
+#billy_cyrus = Parent("Cyrus", "blue")<br>
+#print(billy_cyrus.last_name)<br>
+<br>
+miley_cyrus = Child("Cyrus", "Blue", 5)<br>
+print(miley_cyrus.last_name)<br>
+print(miley_cyrus.number_of_toys)           <br>    
+                  <br><br>
+                  
+        </article>          
+        </article>
+    </section>  
 </html>
