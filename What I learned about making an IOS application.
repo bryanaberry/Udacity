@@ -1,0 +1,53 @@
+What I learned about making an IOS application.
+
+In order to learn more I took an additional class via Udacity.  I took the "Intro to iOS App Development with Swift".
+
+In Lesson 1 I learned about XCode:
+
+This lesson covered downloading and installing Xcode.
+
+The To Do List.  
+
+The following is a breakdown of solution requirements:
+
+1. Add buttons to the app
+2. Add images to the buttons
+3. add text to our app
+4. Show and hide text
+5. Save an audio file in Swift
+6. Transitions between screens
+7. Play audio
+8. change audio speed in swift.
+
+
+MVC is the acro for Model, View and Control.  Apple likes for devopers to use this construct to design apps.
+
+We began using XCode and created the first version of the project application
+
+Downloading XCode took me two days, which was Apples issue not my internet connection.  
+
+
+In Lesson 2, we reviewed how to Add a Button.
+
+we learned how to make buttons and labels.  How to align them and how to assign actions or outlets to them.
+
+Actions and outlets are important in this context so I copied the definitions below.
+
+Action - In this case the View sends a message to our ViewController. Much like when we write an action inside our ViewController to do something when the microphone button is pressed.
+
+Outlet - In this case the ViewController has a variable that it will use when it talks to the View. Much like when our ViewController uses the variable recordingInProgress to show or hide the label on the View.
+
+
+In Lesson 3, I learned how to play audio, change the speed and how to naviagate between screens.
+
+In this lesson, I learned we improved the design of my app by hiding the stop button and disabling the microphone button when the user attempts to record their voice.
+
+I also learned how to move from one screen of the app to another using the Navigation Control.  Also how to link buttons to a screen view.
+
+we also explored how to set different screens with set parameters.   How to change the rate of play was easier than I thought.
+
+In Lesson 4, I learned how to record an audio file.
+
+
+
+

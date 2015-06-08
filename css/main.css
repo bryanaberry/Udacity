@@ -1,0 +1,216 @@
+.bigboxstyle {
+  box-sizing: border-box;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: darkgreen 
+}
+.outsidebox {
+  box-sizing: border-box;
+  position: relative; 
+  width: 90%;
+  background-color: darkorange; 
+  border-radius: 25px;
+  border: 25px solid orange; 
+  margin: 50px auto;  
+}
+.outsidebox  header {
+  display: block;
+  text-align: center;
+  font-weight: bold;  
+  padding: 5px;
+  color: DarkOliveGreen ;
+  margin: 10px 0 10px 0;  
+}
+.insidebox {
+  box-sizing: border-box;
+  position: relative;
+  width: 90%;
+  background-color: Gainsboro; 
+  border-radius: 5px;
+  border: 10px solid black;
+  margin: 1px auto;
+  text-align: left; 
+} 
+
+
+.insidebox header{
+  display: block;
+  text-align: left;
+  font-weight: bold;  
+  padding: 5px;
+  color: black;
+  margin: 10px 0 10px 0;  
+}
+.insidebox h2 {
+  margin: 0 auto 0 auto;
+  padding: 10px 10px 5px 15px;
+  color: forestgreen;   
+}
+.insidebox p {
+  font-weight: bold;
+  padding: 25px;
+    padding-top: 5px;
+    padding-right: 25px;
+    padding-bottom: 5px;
+    padding-left: 25px; 
+}
+.pybox p {
+  line-height: 1;
+  color:black;
+  font-style: italic;
+}
+.pybox {
+  display: block;
+  text-align: left;
+  line-height: 1;
+  font-weight: bold;
+  color: red;
+    font: Georgia;
+  padding: 100px;
+    padding-top: 20px;
+    padding-right: 50px;
+    padding-bottom: 30px;
+    padding-left: 50px; 
+}
+.bigboxstyle {
+  box-sizing: border-box;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: darkgreen 
+}
+.outsidebox {
+  box-sizing: border-box;
+  position: relative; 
+  width: 90%;
+  background-color: darkorange; 
+  border-radius: 25px;
+  border: 25px solid orange; 
+  margin: 50px auto;  
+}
+.outsidebox  header {
+  display: block;
+  text-align: center;
+  font-weight: bold;  
+  padding: 5px;
+  color: DarkOliveGreen ;
+  margin: 10px 0 10px 0;  
+}
+.insidebox {
+  box-sizing: border-box;
+  position: relative;
+  width: 90%;
+  background-color: Gainsboro; 
+  border-radius: 5px;
+  border: 10px solid black;
+  margin: 1px auto;
+  text-align: left; 
+}
+.insidebox header{
+  display: block;
+  text-align: left;
+  font-weight: bold;  
+  padding: 5px;
+  color: black;
+  margin: 10px 0 10px 0;  
+}
+.insidebox h2 {
+  margin: 0 auto 0 auto;
+  padding: 10px 10px 5px 15px;
+  color: forestgreen;   
+}
+h1 {
+  color: darkgreen;
+  font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
+  font-weight: bold;
+  text-align: left;
+}
+h2 {
+  color: #ffffff;
+  font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
+  font-weight: normal;
+  margin: 10px;
+}
+h3 {
+  color: darkgreen;
+  font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
+  font-weight: bold;
+  margin: 10px;
+}
+body {
+  background: darkgreen ;
+  background-position: 0px 5px; 
+  font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
+}
+
+p {
+  font-size: 1.2em;
+}
+
+em {
+  font-weight: 600;
+}
+
+.intro {
+    background-color:darkgreen; 
+    border-width: 2px;   
+    border-color:white;  
+    border-style:solid; 
+    color:white;
+    font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
+    font-weight: bold;
+    font-size: 400%;
+    margin: 100px 250px 100px 250px;
+    text-align:center;
+}
+.heading {
+    border-radius: 20px;
+    border-width: 8px;     
+    background-color:#fa2021;
+    color:white;
+    clear:both;
+    margin: 025px 10px 0px 10px; 
+    padding:5px;
+    text-align:center;
+}
+.stage {
+    background-color:#65c5c4;
+    color: #fefffd;
+    margin: 10px;
+    margin: 0px 25px 0px 25px; 
+    padding:10px;
+}
+.topic {
+    background-color:#fefffd;
+    border-radius: 20px;
+    color: darkgreen;
+    line-height:30px;
+    margin: 10px 10px 10px 10px; 
+    padding:5px;
+}
+
+.footer {
+    color:white;
+    clear:both;
+    margin: 25px 10px 0px 10px; 
+    padding:5px;
+    text-align:center;
+}
+
+
+.form-submission {
+  padding: 0 0 0 2em;
+}
+
+.responsive {
+  width: 100%;
+}
+
+.post {
+  background-color: lightgrey;
+  border-radius: 8px;
+  margin-bottom: 1em;
+  padding: 1em;
+
+}

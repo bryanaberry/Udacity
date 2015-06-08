@@ -1,0 +1,1116 @@
+<!DOCTYPE html>
+<html>     
+    <head>
+      <title>Notes to Intro to Programming</title>
+      <meta charset="utf-8">
+      <link rel="stylesheet" type="text/css" href="2015stage3.css">
+    </head> 
+    <body class="bigboxstyle">  
+      <section class="outsidebox">
+        <header><h1>Stage 1 - The Basics of the Web and HTML</h1></header>
+        <article class="insidebox">
+          <header><h2> How the Web Works </h2></header>
+          <p><em>The World Wide Web</em> is the name given to all of the
+          computers able to communicate with each other via the world's
+          largest network, called the Internet. When a person types in a
+          <em>URL</em> like www.google.com into their <em>web browser
+          </em>'s address bar their computer sends an <em>HTTP</em> 
+          Request to a server. The server finds the appropriate <em>HTML
+          </em> document and sends it back to the user's computer where 
+          a web browser interprets the page and displays it on the user's 
+          screen. This 
+          <a href="https://www.udacity.com/course/viewer#!/c-ud721/l-3508959201/e-48329854/m-48480496">
+          video</a> does a good job of explaining more.
+          </p>
+          <p>
+          <strong>The World Wide Web</strong> - An information system of 
+          interlinked HTML documents that are accessed via the Internet. 
+          Individual document pages on the World Wide Web are called web 
+          pages and are accessed with a software application running on 
+          the user's computer, commonly called a web browser. Web pages 
+          may contain text, images, videos, and other multimedia 
+          components, as well as web navigation features consisting of
+          hyperlinks. It was invented in the early 1990's and today has 
+          approximately 30 billion pages.       
+          </p>
+          <p>
+          <strong>HTTP</strong> - Stands for Hypertext Transfer Protocol. 
+          HTTP is an application layer protocol for distributed, 
+          collaborative, hypermedia information systems. HTTP is the 
+          foundation of data communication for the World Wide Web. 
+          Hypertext is structured text that uses logical links 
+          (hyperlinks) between nodes containing text. HTTP is the 
+          protocol to exchange or transfer hypertext.
+          </p>
+          <p>
+          <strong>URL</strong> - Stands for uniform resource locator. It 
+          is also known as a web address. It is a specific character 
+          string that constitutes a reference to a resource, namely a web 
+          page. Most web browsers display the URL of a web page above the 
+          page in an address bar.
+          </p>        
+        </article>
+        <article class="insidebox">
+          <header><h2>HTML</h2></header>
+          <p>
+          <strong>HTML</strong> - HTML stands for <em>Hypertext Markup 
+          Language</em>. HTML documents form the majority of the content 
+          on the web. They contain <em>text content</em> which describes
+          "what you see" and <em>markup</em> which describes "how it 
+          looks."  This 
+          <a href="https://www.udacity.com/course/viewer#!/c-ud721/l-3508959201/m-48724340">
+          video</a> gives a good overview. HTML
+          </p>
+        </article>
+        <article class="insidebox">
+          <header><h2>Tags and Elements</h2></header>
+          <p>
+          HTML documents are made of HTML elements. When writing HTML, 
+          we tell browsers the type of each element by using HTML tags.
+          HTML is written in the form of HTML elements consisting
+          of tags enclosed in angle brackets (like &lt;html &gt;). HTML 
+          tags most commonly come in pairs like &lt;h1&gt;and &lt;/h1 &gt;,
+          although some tags represent <em>empty elements</em> and so are
+          unpaired, for example &lt;img&gt;. The first tag in a pair is 
+          the <em>start tag</em>, and the second tag is the <em>end 
+          tag</em> (they are also called <em>opening tags</em> and 
+          <em>closing tags</em>).
+          This 
+          <a href="https://www.udacity.com/course/viewer#!/c-ud721/l-3508959201/m-48723444">
+          video</a> explains the distinction well.
+          </p>
+        </article>
+        <article class="insidebox">
+          <header><h2>Why Computers are Stupid </h2></header>
+          <p>
+          Computers are stupid because they interpret instructions 
+          literally. This makes them very unforgiving since a small 
+          mistake by a programmer can cause huge problems in a program
+          </p>
+        </article>
+        <article class="insidebox">
+          <header><h2>Inline Elements</h2></header>
+          <p>
+          An inline element occupies only the space bounded by the tags
+          that define the inline element. Generally, inline elements may
+          contain only data and other inline elements. By default, Inline
+          elements are normally displayed without line breaks.
+          <p>
+          Inline Elements include but are not limited to:
+          </p>
+          <ul style="list-style-type:alpha">
+            <li>a, abbr, acronym</li>
+            <li>b, bdo, big, br, button</li>
+            <li>cite, code</li>
+            <li>dfn</li>
+            <li>em</li>
+            <li>i, img, input </li>
+            <li>kbd</li>
+            <li>label</li>
+            <li>map</li>
+            <li>object</li>
+            <li>q</li>
+            <li>samp, script, select, small, span, strong, sub, sup</li>
+            <li>textarea, tt</li>
+            <li>var</li>
+          </ul>
+        </article>
+        <article class="insidebox">
+          <header><h2>Block Elements</h2></header>
+          <p>
+          Block elements form an "invisible box" around the content inside 
+          of them. A block-level element occupies the entire space of its 
+          parent element (container), thereby creating a "block." Browsers 
+          typically display the block-level element with a newline both 
+          before and after the element. Block-level elements may appear 
+          only within a &lt;body&gt; element. Generally, block-level 
+          elements may contain inline elements and other block-level 
+          elements. Inherent in this structural distinction is the idea 
+          that block elements create "larger" structures than inline 
+          elements. The distinction of block-level vs. inline elements is
+          used in HTML specifications up  to 4.01. In HTML5, this binary
+          distinction is replaced with a more complex set of content 
+          categories. The "block-level" category roughly corresponds to
+          the category of flow content in HTML5, while "inline" 
+          corresponds to phrasing content, but there are additional
+          categories.
+          </p>
+          <p>
+          Block elements include but are not limited to:
+          </p>
+          <ul>
+            <li>address, article, aside, audio </li>
+            <li>blockquote</li>
+            <li>canvas</li>
+            <li>dd, div, dl</li>
+            <li>fieldset, figcaption, figure, footer, form</li>
+            <li>h1, h2, h3, h4, h5, h6, header, hgroup, hr</li>
+            <li>noscript</li>
+            <li>ol, output</li>
+            <li> p, pre </li>
+            <li>section</li>
+            <li>table, tfoot</li>
+            <li>ul</li>
+            <li>video</li>
+          </ul>
+        </article>
+      </section>  
+      <section class="outsidebox">
+        <header><h2>Stage 1 - Creating a Structured Document with HTML</h2></header>
+        <article class="insidebox">
+          <header><h2>Web page Elements</h2></header>
+          <p>
+          HTML and CSS are both languages. HTML controls the 
+          "structure" of a web page while CSS controls the "style" of a 
+          page (how it looks).
+          </p>
+        </article>      
+        <article class="insidebox">
+          <header><h2>Tree Structure of HTML</h2></header>
+          <p>The tree structure is a way of representing the hierarchical
+          nature of a structure in a graphical form. It is named a "tree 
+          structure" because the classic representation resembles a tree, 
+          even though the chart is generally upside down compared to an 
+          actual tree, with the "root" at the top and the "leaves" at the bottom.
+          </p>
+          <p>
+          In computer science, a tree is a widely used abstract data type 
+          (ADT) or data structure implementing this ADT that simulates a 
+          hierarchical tree structure, with a root value and subtrees of 
+          children, represented as a set of linked nodes. 
+          </p>
+          <p>
+          A tree data structure can be defined recursively (locally) as a
+          collection of nodes (starting at a root node), where each node is
+          a data structure consisting of a value, together with a list of 
+          references to nodes (the "children"), with the constraints that no
+          reference is duplicated, and none points to the root.
+          </p>
+          <p>
+          Alternatively, a tree can be defined abstractly as a whole 
+          (globally) as an ordered tree, with a value assigned to each
+          node.
+          </p>
+          <p>
+          The "tree-like structure" comes from the fact that HTML elements
+          can have other elements inside of them. In a browser, this 
+          structure shows up as a series of nested boxes. There are boxes
+          inside of boxes inside of boxes, and so on...
+          </p>
+        </article>
+        <article class="insidebox">
+          <header><h2>The relationship between indented HTML and boxes</h2></header>
+          <p>
+          When you read an HTML document as text, you see a wave of changing
+          indentations going up and down the left side of the document. 
+          The more indented an element is, the more deeply nested it's 
+          corresponding "box" is.
+          </p>
+        </article>
+        <article class="insidebox">
+          <header><h2>Text Editors</h2></header>
+          <p>
+          When writing code, programmers use special text editors (like 
+          Sublime Text for example). These editors make the programmer's
+          life easier. For example, some text editors will automatically
+          generate a closing HTML tag when you write an opening tag.
+          </p>
+        </article>
+        <article class="insidebox">
+          <header><h2>Terms</h2></header>
+          <p>
+          <strong>HTML</strong> - 
+          HyperText Markup Language - the standard markup language 
+          used to create web pages
+          </p>
+          <p>
+          <strong>CSS</strong> - Cascading Style Sheets - style sheet 
+          language used for describing the look and formatting of a 
+          document written in a markup language
+          </p>
+          <p>
+          <strong>The DOM</strong> - When programmers talk about the DOM
+          they are talking about the tree-like structure of the page. 
+          DOM stands for Document Object Model. It is a cross-platform 
+          and language-independent convention for representing and 
+          interacting with objects in HTML, XHTML, and XML documents. 
+          The nodes of every document are organized in a tree structure,
+          called the DOM tree. Objects in the DOM tree may be addressed
+          and manipulated by using methods on the objects. The public
+          interface of a DOM is specified in its application programming
+          interface (API).
+          </p>
+          <p>
+          <strong>Layout Engines</strong> - Web browsers rely on layout 
+          engines to parse HTML into a DOM. Some layout engines, such as
+          Trident/MSHTML, are associated primarily or exclusively with a
+          particular browser, such as Internet Explorer. Others, such as
+          Blink, WebKit, and Gecko, are shared by a number of browsers, 
+          such as Google Chrome, Opera, Safari, and Firefox. The different
+          layout engines implement the DOM standards to varying degrees of
+          compliance.
+          </p>
+        </article>
+        <article class="insidebox">
+          <header><h2>Web Page Layout</h2></header>
+          <ul style="list-style-type:circle">
+            <li>All web pages are made up of boxes</li>
+            <li>When looking at a design go from big boxes to small boxes</li>
+          </ul>
+        </article>
+      </section>
+      <section class="outsidebox">
+        <header><h1>Stage 1 - Adding Style to Structure with CSS</h1></header>
+        <article class="insidebox">
+          <header><h2>CSS Introduction</h2></header>
+          <p>
+          Cascading Style Sheets (CSS) is a style sheet language used 
+          describing the look and formatting of a document written in a 
+          markup language. While most often used to change the style of
+          web pages and user interfaces written in HTML and XHTML, the
+          language can be applied to any kind of XML document, including
+          plain XML, SVG and XUL. 
+          </p>
+          <p>
+          Along with HTML and JavaScript, CSS is a cornerstone technology
+          used by most websites to create visually engaging webpages, user
+          interfaces for web applications, and user interfaces for many 
+          mobile applications.
+          </p>
+          <p>
+          CSS is designed primarily to enable the separation of document 
+          content from document presentation, including elements such as 
+          the layout, colors, and fonts. 
+          </p>
+          <p>
+          This separation can improve content accessibility, provide more 
+          flexibility and control in the specification of presentation
+          characteristics, enable multiple HTML pages to share formatting
+          by specifying the relevant CSS in a separate .css file, and reduce
+          complexity and repetition in the structural content, such as 
+          semantically insignificant tables that were widely used to format
+          pages before consistent CSS rendering was available in all major
+          browsers.
+          </p>
+          <p>
+          CSS makes it possible to separate presentation instructions from the 
+          HTML content in a separate file or style section of the HTML file. 
+          For each matching HTML element, it provides a list of formatting 
+          instructions.
+          </p>
+          <p>
+          This separation of formatting and content makes it possible to 
+          present the same markup page in different styles for different 
+          rendering methods, such as on-screen, in print, by voice (when 
+          read out by a speech-based browser or screen reader) and on 
+          Braille-based, tactile devices. 
+          </p>
+          <p>
+          It can also be used to display the web page differently depending
+          on the screen size or device on which it is being viewed.
+          <p>
+          The CSS specification describes a priority scheme to determine 
+          which style rules apply if more than one rule matches against a 
+          particular element. In this so-called cascade, priorities or 
+          weights are calculated and assigned to rules, so that the results
+          are predictable.
+          </p>
+        </article>
+        <article class="insidebox">
+          <header><h2>CSS Inheritance</h2></header>
+          <p>
+          Inheritance is a key feature in CSS, it relies on the 
+          ancestor-descendant relationship to operate. Inheritance is the
+          mechanism by which properties are applied not only to a 
+          specified element, but also to its descendants.[11] Inheritance
+          relies on the document tree, which is the hierarchy of (X)HTML 
+          elements in a page based on nesting. Descendant elements may 
+          inherit CSS property values from any ancestor element enclosing 
+          them. In general, descendant elements inherit text-related 
+          properties, but box-related properties are not inherited. 
+          Properties that can be inherited are color, font, letter-spacing,
+          line-height, list-style, text-align text-indent, text-transform,
+          visibility, white-space and word-spacing. Properties that cannot
+          be inherited are background, border, display, float and clear, 
+          height and width, margin, min- and max-height and -width, outline,
+          overflow, padding, position, text-decoration, vertical-align and
+          z-index.
+          </p>
+          <p>
+          Inheritance prevents certain properties from being declared over
+          and over again in a style sheet, allowing the software developers
+          to write less CSS. It enhances faster-loading of web pages by 
+          users and enables the clients to save money on bandwidth and 
+          development costs.
+          </p>
+          <p>
+          Inheritance relies on the document tree, which is the hierarchy 
+          of (X)HTML elements in a page based on nesting.
+          </p>
+        </article>
+        <article class="insidebox">
+          <header><h2>CSS Styling</h2></header>       
+          <p>
+          <strong>Inline Styling</strong> - To use inline styles, add the 
+          style attribute to the relevant tag. An inline style loses many
+          of the advantages of a style sheet (by mixing content with 
+          presentation). Use this method sparingly! The style attribute
+          can contain any CSS property. The example shows how to change 
+          the color and the left margin of a h1 element:
+          <p>
+          &lt;h1 style="color:blue;margin-left:30px;"&gt;This is a heading.&lt;/h1&gt;
+          </p>
+          <p>
+          <strong>Internal Style Sheet</strong> - An internal style sheet 
+          should be used when a single document has a unique style. You 
+          define internal styles in the head section of an HTML page, 
+          inside the &lt;style&gt; tag, like this:
+          </p>
+          <p>
+          &lt;head&gt;<br>
+          &nbsp; &nbsp; &nbsp; &nbsp; &lt;style&gt;<br>
+          &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;body {<br>
+          &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; 
+          &nbsp; &nbsp; &nbsp;background-color: linen; <br>
+          &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; } <br>
+          &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; h1 { <br>
+          &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;
+          &nbsp; &nbsp; &nbsp;color: maroon; <br>
+          &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; 
+          &nbsp; &nbsp; &nbsp;margin-left: 40px; <br>
+          &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; } <br>
+          &nbsp; &nbsp; &nbsp; &nbsp; &lt;/style&gt; <br>
+          &lt;head&gt;
+          </p>
+          <p>
+          <strong>External Style Sheets</strong> - An external style sheet
+          is ideal when the style is applied to many pages. With an 
+          external style sheet, you can change the look of an entire Web
+          site by changing just one file.
+          </p>
+          <p>
+          Each page must include a link to the style sheet with the 
+          &lt;link&gt; tag. The &lt;link&gt; tag goes inside the head section:
+          </p>
+          <p>
+          &lt;head&gt;<br>
+          &nbsp; &nbsp; &nbsp; &nbsp; &lt;link rel="stylesheet" 
+          type="text/css" href="mystyle.css"&gt;<br>
+          &lt;/head&gt;
+          </p>
+        </article>
+        <article class="insidebox">
+          <header><h2>Box Sizing</h2></header>        
+          <p>
+          The four main points to remember about box-sizing:
+          </p>
+          <ol>
+            <li>HTML elements are boxes and each box has 4 components</li>
+            <li>Because there are so many components to each box, it 
+            can often be hard to get the size of a box just right.
+            </li>
+            <li>There are two techniques you can use to help deal with
+            sizing issues: (1) Set sizes in terms of percents rather than pixels. (2) Set the box-sizing attribute to border-box for every element</li>
+            <li>Different browsers work slightly differently. Sometimes
+            this causes different browsers to display the same code 
+            differently.
+            </li>
+          </ol>
+        </article>
+        <article class="insidebox">
+          <header><h2>Box Positioning</h2></header>
+          <ol>
+            <li>Divs are block elements (as opposed to inline), so by 
+            default they take up the entire width of a page.
+            </li>
+            <li>Adding the rule display: flex; to the appropriate CSS
+            will override this behavior and let divs appear next to 
+            each other.
+            </li>
+            <li>A complete guide to 
+            <a href="http://css-tricks.com/snippets/css/a-guide-to-flexbox/">
+            flexbox</a></li>
+          </ol>
+        </article>  
+        <article class="insidebox">
+          <header><h2>Code, Test, Refine</h2></header>
+          <p>
+          Get the structure of the page right. You should be able to do 
+          that from the design by visually boxifying it, then move on to
+          work on the tags, i.e., if something needs to be a heading, 
+          make it so. Then think about the size of the boxes (how big 
+          should they be) and then think about positioning the boxes so 
+          that they are where you want them on the screen.  Once the general
+          layout is complete, then begin looking at the smaller details.
+          </p>
+          <p>
+          Steps:
+          </p>
+          <ol>
+            <li>Look for natural boxes</li>
+            <li>Look for repeated styles & semantic elements</li>
+            <li>Write your html</li>
+            <li>Apply your styles from biggest to smallest.</li>
+            <li>Fix things</li>
+          </ol>
+        </article>
+        <article class="insidebox">
+          <header><h2>HTML/CSS Validation</h2></header>
+          <p>
+          To verify <a href="http://validator.w3.org/#validate_by_input">HTML</a><br>
+          To verify <a href="http://jigsaw.w3.org/css-validator/#validate_by_input">CSS</a>
+          </p>      
+        </article>
+     </section>
+   <section class="outsidebox">
+        <header><h1>STAGE 2: Intro to Python</h1>
+        </header>
+        <article class="insidebox">
+          <h2></h2>
+          <article class="pybox"> 
+          <header><h2>Intro to Python Programming</h2></header>
+          <p>Python comments are made with '#' </p>
+            
+                      
+              # This is a Python comment. Lines that begin with a '#' are ignored by the<br>
+              # Python interpreter. Comments are useful for documenting code or explaining what the function is!<br>
+            </article>
+        </article>
+        <article class="insidebox">
+          <header><h2>Pyton Basics</h2></header>
+          <p> EXAMPLE 1: Lists can contain strings</p>
+            <article class="pybox">
+              string_list = ['HTML', 'CSS', 'Python']<br>
+              print string_list<br>
+              #['HTML', 'CSS', 'Python']<br>
+            </article>
+          
+          <p> EXAMPLE 2: Lists can contain numbers</p>
+            <article class="pybox"> 
+              <h3></h3>
+              number_list = [3.14159, 2.71828, 1.61803]<br>
+              print number_list<br>
+              #[3.14159, 2.71828, 1.61803]<br>
+            </article>
+          <header></header>
+          <p> EXAMPLE 3: Lists can be 'accessed' and 'sliced'</p>
+            <article class="pybox"> 
+              <h3></h3>
+              pi = number_list[0]<br>
+              ot_pi = number_list[1:]<br>
+              print pi<br>
+              print not_pi<br>
+              #3.14159<br>
+              #[2.71828, 1.61803]<br>
+            </article>
+          <p> EXAMPLE 4: Lists can contain strings AND numbers</p>
+            <article class="pybox"> 
+              <h3></h3>
+              mixed_list = ['Hello!', 42, "Goodbye!"]<br>
+              print mixed_list<br>
+              #['Hello!', 42, 'Goodbye!']<br>
+            </article>
+          <p> Example 5: Lists can even contain other lists</p>
+            <article class="pybox"> 
+              <h3></h3>
+              list_with_lists = [3, 'colors:', ['red', 'green', 'blue'], 'your favorite?']<br>
+              print list_with_lists<br>
+              #[3, 'colors:', ['red', 'green', 'blue'], 'your favorite?']<br>
+            </article>
+        </article>
+        <article class="insidebox">
+          <header><h2>Python Variables</h2></header>
+          <p>Given a variable that takes as an imput a number, representing a month, and returns the number of days in that month </p>
+            <article class="pybox"> 
+              <header></header>
+              days_in_month = [31,28,31,30,31,30,31,31,30,31,30,31]<br>
+              <br>
+              def how_many_days(n):<br>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return days_in_month[n-1]<br><br>
+              <br>
+              print how_many_days(1)<br>
+              #>>> 31<br>
+              <br>
+              print how_many_days(9)<br>
+              #>>> 30<br>
+            </article>
+        </article>
+        <article class="insidebox">
+          <header><h2>Nested Lists</h2></header>
+          <p>Every entry in the following list is itself a list </p>
+            <article class="pybox"> 
+              <header></header>
+              nested_list = [['HTML', 'Hypertext Markup Language forms the structure of webpages'],<br>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;['CSS' , 'Cascading Style Sheets give pages style'],<br>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;['Python', 'Python is a programming language'],<br>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;['Lists', 'Lists are a data structure that let you organize information']]<br>
+              <br>
+              first_concept = nested_list[0]<br>
+              <br>
+                            <br>
+              print first_concept <br>
+              <br><br>
+              #['HTML', 'Hypertext Markup Language forms the structure of webpages']<br>
+              
+              <p style="color:black">==>Since first_concept was itself a list, we can access it's elements</p>
+              first_title = first_concept[0]<br>
+              first_description = first_concept[1]<br>
+              <br>
+              print first_title<br>
+              print first_description<br>
+              <br>
+              <br>
+              #HTML<br>
+              #Hypertext Markup Language forms the structure of webpages<br>
+              <br>
+              <br>
+              
+              <br>
+              <br>
+            </article>
+        </article>
+                <article class="insidebox">
+          <header><h2>Variables</h2></header>
+          <p>Given the variable countries defined as </p>
+            <article class="pybox"> 
+              <header></header>
+              Name    Capital  Populations (millions)<br>
+              <br>
+              countries = [['China','Beijing',1350],<br>
+                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;         ['India','Delhi',1210],<br>
+                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;     ['Romania','Bucharest',21],<br>
+                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;     ['United States','Washington',307]]<br>
+
+              <br><br>
+              <br>
+             <p style="color:black">==>Lets write the code to print out the capital of India by accessing the above array</p>
+
+              print countries[1] [2]<br>
+              India 1210<br>
+              <br><br>  
+              <br>
+              <p style="color:black">==>We can do math on list.</p>
+
+              
+              <br><br>  
+              <br>
+
+              <p style="color:black">How to find multiple of Romania's population is the population of    China.</p>
+              
+
+              u=(countries[0][2] / countries[2][2])<br>
+              print u<br>
+              64<br>
+              <br><br>  
+              <br>
+              <p># How to REPLACE an element in a list.</p>
+              
+              <br>
+              stooges = ['Moe','Larry','Curly']<br>
+              <p>We can replace Curly with Shemp</p>
+
+              stooges[2]='Shemp'<br>
+              print stooges<br>
+              ['Moe', 'Larry', 'Shemp']<br>
+
+            </article>
+        </article>
+        <article class="insidebox">
+          <header><h2>Proceedures</h2></header>
+          <p>Examples of defining a proceedure.  A proceedure takes an input, and returns an output. </p>
+            <article class="pybox"> 
+              <header></header>
+              <p>This procedure, replace_spy, will take as it's input a list of 3 numbers and then modifies the value of the 3rd element in the input list to be the one more than it's previous value.</p>
+
+
+              spy = [0,0,7]<br>
+
+              def replace_spy(x):<br>
+               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  x[2]=x[2]+1<br>
+
+              <p> In the test below, the first line calls your procedure which will change spy, and the second checks you have changed it. </p>
+
+              replace_spy(spy)<br>
+              print spy<br>
+              [0,0,8]<br>
+
+              <p style="color:black"> This procedure, sum_list, takes as its input a list of numbers, and returns the sum of all the elements in the input list.</p>
+
+
+    
+              def sum_list(p):<br>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    result = 0<br>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    for e in p:<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;      result = result + e<br>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  return result<br>
+              <br>
+              print sum_list([1, 7, 4])<br>
+              12<br>
+              <br>
+              print sum_list([9, 4, 10])<br>
+              23<br>
+              <br>
+              print sum_list([44, 14, 76])<br>
+              134<br>
+              <br>
+              
+              <p>Proceedures with Strings</p>
+              <p>This procedure,measure_udacity, takes as its input a list of strings, and returns a number that is a count of the number of elements in the input list that start with the uppercase # letter 'U'.</p>
+
+  
+
+              def measure_udacity(U):<br>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;count = 0<br>
+               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;for e in U:<br>
+               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if e[0] == 'U':<br>
+               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;count = count + 1<br>
+               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   return count       <br>
+
+              <br><br>
+
+              print measure_udacity(['Dave','Sebastian','Katy'])<br>
+              #>>> 0<br>
+              <br>
+              print measure_udacity(['Umika','Umberto'])<br>
+              #>>> 2<br>
+              <br>
+
+              <p>This procedure, find_element, will take as its inputs a list and a value of any type, and returns the index of the first element in the input list that matches the value.  If there is no matching element, then it will return -1.</p>
+
+
+
+              def find_element(p,t):<br>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  if t not in p:<br>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    return -1<br>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  return p.index(t)<br>
+              <br>
+              <br>
+              print find_element([1,2,3],3)<br>
+              2<br>
+              <br>
+              print find_element(['alpha','beta'],'gamma')<br>
+              -1<br>
+              <br>
+
+              <p>This procedure, find_element, using index that takes as its inputs a list and a value of any type, and returns the index of the first element in the input list that matches the value.</p>
+
+              <p>If there is no matching element, return -1.</p>
+              <br>
+              def find_element(a,b):<br>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   if b in a:<br>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return a.index(b)<br>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  return -1<br>
+              <br>
+              <br>
+
+              print find_element([1,2,3],3)<br>
+              2<br>
+              </article>
+          </article>
+          <article class="insidebox">
+          <header><h2>Adding and Appending</h2></header>
+          <p>This section refers to adding and appending to lists </p>
+            <article class="pybox"> 
+              <header></header>
+              <p>These examples will show differing ways of appending to lists.</p>
+
+              list1 = [1,2,3,4]<br>
+              list2 = [1,2,3,4]<br>
+              <br>
+              list1 = list1 + [5]<br>
+              list2.append(5)<br>
+              <br>
+              <p>One can see that both operations will append to the list.</p>
+              <br>
+              print list1<br>
+              print list2<br>
+              <br>
+              [1,2,3,4,5]<br>
+              [1,2,3,4,5]<br>
+              <br>
+              <p>Nothing is different between these two pieces of code?</p>
+              <br>
+              def proc(mylist):<br>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;mylist = mylist + [6]<br>
+              <br>
+              def proc2(mylist):<br>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;mylist.append(6)<br>
+              <br>
+
+              <br>
+              print list1<br>
+              [1,2,3,4,5]<br>
+              <br>
+              proc(list1)<br>
+              print list1<br>
+              [1,2,3,4,5]<br>
+              <br>
+              print list2<br>
+              [1,2,3,4,5]<br>
+              <br>
+              proc2(list2)<br>
+              print list2<br>
+              [1,2,3,4,5,6]<br>
+              <br><br>
+              <p>Python has a special assignment syntax: +=.  Here is an example:</p>
+
+
+              list3 = [1,2,3,4]<br>
+              list3 += [5]<br>
+              <br>
+              [1,2,3,4,5]<br>
+
+              <p>There are three ways of mutation</p>
+
+              list1 = list1 + [7,8,9]<br>
+              list2.append([7,8,9])<br>
+              list3 += [7,8,9]<br>
+               <br>   
+              <br>
+              print list1<br>
+              [1,2,3,4,5,6,7,8,9]<br>
+              <br>
+              print list2<br>
+              [1,2,3,4,5,6,[7,8,9]]<br>
+              <br>
+              print list3<br>
+              [1,2,3,4,5,6,7,8,9]<br>
+              <br>
+              <p>This procedure list_test which takes three lists as inputs. Will mutate the first input list to include 'a' as the last entry, mutate the second to include the entries 'a', 'b', 'c' and finally the last list will not be mutated but a copy will be returned with the additional entry 'w'.</p>
+              <br>
+              def list_test(first_input,second_input,third_input):<br>
+               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   first_input.append('a')<br>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    second_input+=['a','b','c']<br>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    list_test = third_input+['w']<br>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    return list_test<br>
+              <br><br>
+              first_input = [1,2,3]<br>
+              second_input = [4,5,6]<br>
+              third_input = [7,8,9]<br>
+              <br>
+              print list_test(first_input, second_input, third_input)<br>
+              [7,8,9,'w']<br>
+              <br>
+              print first_input<br>
+              [1,2,3,'a']<br>
+              <br>
+              print second_input<br>
+              [4,5,6,'a','b','c']<br>
+              <br>
+              print third_input<br>
+              #>>> [7,8,9]<br>
+              <br>
+
+              <p>This procedure, product_list, takes as input a list of numbers, and returns a number that is the result of multiplying all those numbers together.</p>
+              <br>
+              def product_list(a):<br>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    total=1<br>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    while a:<br>
+               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;       x=a.pop()<br>
+               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;       total=total * x<br>
+               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   return total<br>
+              <br>     
+
+              print product_list([9])<br>
+              >>> 9<br>
+              <br>
+              print product_list([1,2,3,4])<br>
+              >>> 24<br>
+              <br>
+              print product_list([])<br>
+              >>> 1<br>
+              <br>
+
+
+              <p>This procedure, greatest, that takes as input a list of positive numbers, and returns the greatest number in that list. If the input list is empty, the output should be 0.</p>
+              <br>
+              def greatest(l):<br>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    g=0<br>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    for e in l:<br>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;        if(e>g):<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;g=e<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;      return g     <br>  
+              <br>
+              print greatest([4,23,1])<br>
+              >>> 23<br>
+              <br>
+              print greatest([])<br>
+              >>> 0<br>
+              <br>
+          </article>
+        </article>
+        <article class="insidebox">
+          <header><h2>Automation</h2></header>
+          <p>Examples of creating HTML code using python.  In these examples, we will reuse some of the code from the previous work session to make a new function that creates HTML from a list whose entries are a title and a description. </p>
+            <article class="pybox"> 
+              <p>This is the "generate_concept_HTML" function from the previous work_session. You don't need to modify it (though you are welcome to change it to accomodate whatever HTML structure you are using).</p>
+              
+              
+              def generate_concept_HTML(concept_title, concept_description):<br>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    html_text_1 = '''<br>
+              &lt;div class="concept"&gt;<br>
+               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   &lt;div class="concept-title"&gt;<br>
+               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;       ''' + concept_title<br>
+               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   html_text_2 = '''<br>
+               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   &lt;/div&gt;<br>
+               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   &lt;div class="concept-description"&gt;<br>
+               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;      ''' + concept_description<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  html_text_3 = '''<br>
+               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   &lt;/div&gt;<br>
+              &lt;/div&gt;'''<br>
+                 <br>
+               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   full_html_text = html_text_1 + html_text_2 + html_text_3<br>
+               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   return full_html_text<br>
+              <br>
+              print generate_concept_HTML("Hello", "This is sweet")<br>
+              <br>
+              &lt;div class="concept"&gt;<br>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   &lt;div class="concept-title"&gt;<br>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;        Hello<br>
+               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   &lt;/div&gt;<br>
+               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   &lt;div class="concept-description"&gt;<br>
+               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;       This is sweet<br>
+               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  &lt;/div&gt;<br>
+              &lt;/div&gt;<br>
+        </article>
+      </article>
+    </section>
+
+
+
+    <section class="outsidebox">
+        <header>
+            <h1>Stage 3 - Object Oreinted Programming</h1></header>
+        <article class="insidebox">
+            <header>
+                <h2> What is OOP ? </h2></header>
+            <p><em>Object-oriented programming</em> (OOP) is a programming paradigm based on the concept of "objects", which are data structures that contain data, in the form of fields, often known as attributes; and code, in the form of procedures, often known
+                as methods. <i>From Wikipedia</i></p>
+
+
+            <p>Why we even need OPP? It is because of the maintainability problem. Any large codebase has to be just as maintainable as small codebase. Since, OOP features decoupling, modularity, reuse, etc., it helps developing maintainable code. Also, nowadays
+                performance issues are often neglected in favor of maintainability because with advanced algorithms and faster hardware, performance issues can be limited to an acceptable level.</p>
+
+            <p>However, there are projects for which different programming paradigms are preferred. Primarily because these projects have different goals. For instance, functional reactive programming have come to fashion for event-based and asynchronous systems
+                development.
+            </p>
+
+            <p>So, to answer the "why" question, OOP is the most popular programming paradigm in use today. OOP programmers can sectionalize and break down projects into reusuable components.</p>
+            <p><em>Object</em> - In the class-based object-oriented programming paradigm, "object" refers to a particular instance of a class where the object can be a combination of variables, functions, and data structures.<i>From Wikipedia</i></p>
+            <p><em>Class</em> - In object-oriented programming, a class is an extensible program-code-template for creating objects, providing initial values for state (member variables) and implementations of behavior (member functions, methods). In many languages,
+                the class name is used as the name for the class (the template itself), the name for the default constructor of the class (subroutine that creates objects), and as the type of objects generated by the type, and these distinct concepts are easily
+                conflated. When an object is created by a constructor of the class, the resulting object is called an instance of the class, and the member variables specific to the object are called instance variables, to contrast with the class variables shared
+                across the class.<i>From Wikipedia</i></p>
+            <p><em>Instance</em> - In object-oriented programming (OOP), an instance is a specific realization of any object. Formally, "instance" is synonymous with "object" as they are each a particular value (realization), and these may be called an instance
+                object; "instance" emphasizes the distinct identity of the object. The creation of a realized instance is called instantiation.<i>From Wikipedia</i></p>
+            <p><em>Method</em> - A method (or message) in object-oriented programming (OOP) is a procedure associated with an object class. An object is made up of behavior and data. Data is represented as properties of the object and behavior as methods. Methods
+                are also the interface an object presents to the outside world. For example a window object would have methods such as open and close. One of the most important capabilities that a method provides is method overriding. The same name (e.g., area)
+                can be used for multiple different kinds of classes. This allows the sending objects to invoke behaviors and to delegate the implementation of those behaviors to the receiving object. For example an object can send an area message to another object
+                and the appropriate formula will be invoked whether the receiving object is a rectangle,circle, triangle, etc. Methods also provide the interface that other classes use to access and modify the data properties of an object. This is known as encapsulation.
+                Encapsulation and overriding are the two primary distinguishing features between methods and procedure calls.<i>From Wikipedia</i></p>
+            <p><em>Module</em> - Modular programming is a software design technique that emphasizes separating the functionality of a program into independent, interchangeable modules, such that each contains everything necessary to execute only one aspect of
+                the desired functionality. A module interface expresses the elements that are provided and required by the module. The elements defined in the interface are detectable by other modules. The implementation contains the working code that corresponds
+                to the elements declared in the interface. Modular programming is closely related to structured programming and object-oriented programming, all having the same goal of facilitating construction of large software programs and systems by decomposition
+                into smaller pieces, and all originating around the 1960s. While historically usage of these terms has been inconsistent, today "modular programming" refers to high-level decomposition of the code of an entire program into pieces, structured programming
+                to the low-level code use of structured control flow, and object-oriented programming to the data use of objects, a kind of data structure.<i> From Wikipedia</i></p>
+            <p><em>Library</em> - In computer science, a library is a collection of non-volatile resources used by computer programs, often to develop software. These may include configuration data, documentation, help data, message templates, pre-written code
+                and subroutines, classes, values or type specifications. <i> From Wikipedia</i></p>
+
+            <p><em>Class Variables</em> - Class variables are shared in the sense that they are accessed by all objects (instances) of that class. There is only copy of the class variable and when any one object makes a change to a class variable, the change is
+                reflected in all the other instances as well. <i> From http://www.ibiblio.org/</i></p>
+
+            <p><em>Inheritance</em> - In object-oriented programming (OOP), inheritance is when an object or class is based on another object or class, using the same implementation (inheriting from a class) specifying implementation to maintain the same behavior
+                (realizing an interface; inheriting behavior). It is a mechanism for code reuse and to allow independent extensions of the original software via public classes and interfaces. The relationships of objects or classes through inheritance give rise
+                to a hierarchy. <i> From Wikipedia</i></p>
+
+            <p><em>Method Overriding</em> - Method overriding and overloading are two of the most significant ways that a method differs from a conventional procedure or function call. Overriding refers to a subclass redefining the implementation of a method of
+                its superclass. For example findArea may be a method defined on a shape class. The various subclasses: rectangle, circle, triangle, etc. would each define the appropriate formula to calculate their area. The idea is to look at objects as "black
+                boxes" so that changes to the internals of the object can be made with minimal impact on the other objects that use it. This is known as encapsulation and is meant to make code easier to maintain and re-use. Method overloading on the other hand
+                refers to differentiating the code used to handle a message based on the parameters of the method. If one views the receiving object as the first parameter in any method then overriding is just a special case of overloading where the selection
+                is based only on the first argument. The following simple Java example illustrates the difference. <i> From Wikipedia</i></p>
+
+        </article>
+        <article class="insidebox">
+            <header>
+                <h2>Functions</h2></header>
+                <article class="pybox"> 
+              <header><strong>Take a Break</strong></header>
+            <p>
+                 In this lesson, we learned about functions in Pyton. The code below is called take a break. Inwhich after a certain amount of time a website opens.
+            </p>
+                  <p> In order for this function to work, we need to import two important MODULES.  Time and Webbrowser.  These will give us the ability to both use time and browser funtions.</p>
+
+            import webbrowser<br> 
+            import time <br> 
+            rest=1<br> 
+            while rest =3:<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;time.sleep(7)<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; webbrowser.open("https://www.python.org/downloads/release/python-279")<br>  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; rest=rest+1
+                <br>
+                <header><strong>Prank</strong></header>
+              <p>In this lesson, about more python Modules. The code below is called "prank". In which the function is called to change file names.
+            </p>
+                  <p> In order for this function to work, we need to import another important MODULE.  The module OS has several callable funtions such as "listdir", "getcwd", "chdir" and "rename".  These will give us the ability to both access the Operating System and make changes to file names in the folder.</p>
+
+                  
+import os<br><br>
+                  
+def rename():<br><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    filelist = os.listdir(r"/Users/bryanberry/Documents/Nano Notes/prank")<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;print (filelist)<br>
+   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; savedpath = os.getcwd()<br>
+   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; #os.getcwd changes working directory<br>
+   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; print("Current Working Directory is "+savedpath)<br>
+   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; os.chdir(r"/Users/bryanberry/Documents/Nano Notes/prank")<br>
+   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; #os.chdir changes directory<br>
+   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; # Next we will change the file name<br>
+   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; for filename in filelist:<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    print("Old Name - "+filename)<br>
+     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   print("New Name - "+filename.translate(None,"0123456789"))<br>
+     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   os.rename(filename, filename.translate(None,"0123456789"))<br>
+   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; os.chdir(savedpath)<br>
+<br>
+rename()<br>
+<br><br><br>        
+          </article>
+          </article>
+          <article class="insidebox">
+            <header>
+                <h2>Classes</h2></header>
+                <article class="pybox"> 
+              <header><strong>Turtle</strong></header>
+              <p>In the turtle funtion, we are now going to call upon a CLASS of Turtle.  So the function is "turtle" and the class is "Turtle".  Inside the class Turtle we will call we will call upon some of the METHODS.  "Shape", "Color" and "speed" are all methods of the class Turtle.</p>  
+                  <p> In the python code below, we created an INSTANCE or OBJECT of class Turtle called BRAD and ANGIE.</p>
+                  
+                  
+import turtle<br>
+<br>
+def drawsquare(someturtle):<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    for I in range(1,5):<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;       someturtle.forward(100)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;      someturtle.right(90)<br>
+<br>
+def drawart():<br>        
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    window = turtle.Screen()<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    window.bgcolor("red")<br>
+    <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    brad = turtle.Turtle()<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    brad.shape("turtle")<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    brad.color("yellow")<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    brad.speed(1)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    for i in range(1,50):<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;        drawsquare (brad)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;        brad.right(5)<br>
+<br>
+    <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    window.exitonclick()<br>
+<br>
+drawart()<br>         
+              
+            <header><strong>Twillio</strong></header>     
+            <p> This is the funnest lesson.  How to use pyton to SMS Text someone.  This opens a bunch of possibilities for me.</p>
+            <p>In order to send texts I needed to Download and install Twilio. From the code below one can see the first line of "from twilio.rest import TwilioRestClient".  This line opens the "twilio" module, finds the class (folder) "rest" and imports the module "TwilioRestClient".</p>
+                  
+                  
+from twilio.rest import TwilioRestClient<br>
+ <br>
+# Your Account Sid and Auth Token from twilio.com/user/account<br>
+account_sid = "AC0d3a247bfeb1a8196414a3e0273f71f7"<br>
+auth_token  = "XXXXXXXXXXXXXXXXXXXXX"(placed xxx's to protect my account)<br>
+client = TwilioRestClient(account_sid, auth_token)<br>
+ <br>
+message = client.messages.create(body="I am insane",<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    to="+18103352205",    <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    from_="+18102789016") <br>
+print message.sid                 <br>
+                  
+                  
+        <header><strong>Profanity</strong></header>     
+            <p> In this lesson we will use "open" module, which is a built-in function</p>
+            <p>We also use the module "urlopen" in the class "urllib"</p>         
+                  
+                  
+import urllib<br>
+<br>
+def readtext():<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    quotes = open("/Users/bryanberry/Documents/Nano Notes/Stage 3 Notes/moviequotes.txt")<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    contentsoffile = quotes.read()<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    #print(contentsoffile)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    quotes.close()<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    checkprofanity(contentsoffile)<br>
+<br>
+<br>
+<br>
+def checkprofanity(text2check):<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    connection = urllib.urlopen("http://www.wdyl.com/profanity?q=shot" + text2check)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    output = connection.read()<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    #print (output)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    connection.close()<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    if "true" in output:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;        print ("Profanity alert!!!!!!!")<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    elif "false" in output:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;        print (" this document has no curse words!")<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    else:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;        print("could not scan the document properly")<br>
+<br><br>
+
+readtext()<br>
+              </article>
+            </article>
+            
+            <article class="insidebox">
+            <header>
+                <h2>Creating Classes</h2></header>
+                <article class="pybox"> 
+              <header><strong>Movies</strong></header>            
+            
+            
+            <p> In this lesson we will build our own CLASSES.  </p>
+            <p>The Goal is to create reusable classes that keep a template. This will allow flexiblity and condensed code to create a movie website. In the code below, I created a new class file, called "movie", with class "Movie.   In this class, I had to create the funtion "__init__".  I created a CONSTRUCTOR for SELF.  This will inialize all the variables required for the movie site. By placing "self" in front of the variable, we make this a 'constructor variable', which will assign any movie class we create with this template of varibles.</p>
+                  
+                  <p> Also, you will see "import webbrowser" in the movie.py, this will allow to open URL's in this class. Show_trailer is an "instance varible".</p>
+      
+import webbrowser<br>
+<br>
+class Movie():<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    def __init__(self, movie_title, movie_storyline, poster_image, trailer_youtube):<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;        self.title = movie_title<br>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;      self.storyline = movie_storyline<br>
+   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;     self.poster_image_url = poster_image<br>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;      self.trailer_youtube_url = trailer_youtube<br>
+<br>
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   def show_trailer(self):<br>
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;       webbrowser.open(self.trailer_youtube_url)   <br>              
+                  <br>
+                  
+                  <p>This code below illustrates INHERITANCE</p>
+                  
+                  
+                  <p>In the code below, this shows how we can use class inheritance to propogate behavior of parent classes.</p>
+                  
+class Parent():<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    def __init__(self, last_name, eye_color):<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;        print("Parent Constructor Called")<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;        self.last_name = last_name<br>
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;       self.eye_color = eye_color<br>
+<br>
+<br>
+class Child(Parent):<br>
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   def __init__(self, last_name, eye_color, number_of_toys):<br>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;      print("Child Constructor Called")<br>
+   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;     Parent.__init__(self, last_name, eye_color)<br>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;      self.number_of_toys = number_of_toys<br>
+        <br><br>
+
+#billy_cyrus = Parent("Cyrus", "blue")<br>
+#print(billy_cyrus.last_name)<br>
+<br>
+miley_cyrus = Child("Cyrus", "Blue", 5)<br>
+print(miley_cyrus.last_name)<br>
+print(miley_cyrus.number_of_toys)           <br>    
+                  <br><br>
+                  
+        </article>          
+        </article>
+    </section>  
+</html>
