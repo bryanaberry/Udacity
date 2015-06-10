@@ -1,6 +1,5 @@
 import urllib
 import os
-import cgi
 
 from google.appengine.api import users
 from google.appengine.ext import ndb
@@ -42,7 +41,11 @@ class Post(ndb.Model):
 class MainPage(Handler):
     def get(self):
         mypage_name = self.request.get('mypage_name',DEFAULT_PAGE)
+
+
         if mypage_name == DEFAULT_PAGE.lower(): mypage_name = DEFAULT_PAGE
+        #if mypage_name = False or "":
+        #    mypage_name = DEFAULT_PAGE
 
         posts_to_fetch = 10
         cursor_url = self.request.get('continue_posts')

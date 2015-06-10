@@ -6,15 +6,39 @@
   </div>
   <div class="stage">
     <div class="topic">
-      <h3>How Servers Work</h3> 
+      <h3>How servers handle requests and deliver responses </h3> 
         <p>
-          Servers allow us to create, share, and display web content. Using a public web sever allows anyone with access to the internet to view a specified web site and contact. Servers render HTTP in a way that browsers can display the content correctly to the user
+          Servers allow us to create, share, and display web content. Using a public web sever allows anyone with access to the internet to view a specified web site and contact. Servers render HTTP in a way that browsers can display the content correctly to the user.
           <br>
           <br>
           The purpose of a server is to respond to HTTP requests. Servers can display static (pre-written content files) and Dynamic (content requests that are build real time).
           <br>
           <br>
-          Web applications are programs that build web content. 
+          Below are the step in how servers handle requests and deliver responses:
+          <br>
+          <br>
+          Step 1: Parsing the URL
+          <br>
+          <br>
+          The first thing the browser has to do is to look at the URL of the new document to find out how to get hold of the new document. Most URLs have this basic form: "protocol://server/request-URI". The protocol part describes how to tell the server which document the you want and how to retrieve it. The server part tells the browser which server to contact, and the request-URL is the name used by the web server to identify the document. 
+          <br>
+          <br>
+          Step 2: Sending the request
+          <br>
+          <br>
+          Usually, the protocol is "http". To retrieve a document via HTTP the browser transmits the following request to the server: "GET /request-URI HTTP/version", where version tells the server which HTTP version is used. Usually, the browser includes some more information as well. 
+          <br>
+          <br>
+          One important point here is that this request string is all the server ever sees. So the server doesn't care if the request came from a browser, a link checker, a validator, a search engine robot or if you typed it in manually. It just performs the request and returns the result.
+          <br>
+          <br>
+          Step 3: The server response
+          <br>
+          <br>
+          When the server receives the HTTP request it locates the appropriate document and returns it. However, an HTTP response is required to have a particular form. 
+          <br>
+          <br>
+          The first line shows the HTTP version used, followed by a three-digit number (the HTTP status code) and a reason phrase meant for humans. Usually the code is 200 (which basically means that all is well) and the phrase "OK". The first line is followed by some lines called the header, which contains information about the document. The header ends with a blank line, followed by the document content. 
           <br>
           <br>
           <a href="https://www.udacity.com/course/viewer/#!/c-nd000/l-4169998949/m-48748026">This video</a> does a good job of explaining more about servers.
@@ -57,7 +81,7 @@
       <div class="md-col-12">
         <form>
           Posts For:
-          <input type="text" value="{{mypage_name}}" name="mypage_name">
+          <input type="text" value="{{mypage_name}}" name="mypage_name" required>
           <input type="submit" class="btn btn-primary" value="Change Wall">
         </form>
       </div>
@@ -72,7 +96,7 @@
       </div>
       <div class="col-md-8">
          <form class="form-submission" action="/sign?mypage_name={{mypage_name}}" method="post">
-          <textarea class="form-control" name="content" rows="5" cols="90"></textarea><br>
+          <textarea class="form-control" name="content" rows="5" cols="90" required></textarea><br>
           <input type="submit" class="btn btn-primary" value="Post to Wall">
         </form>
       </div>
