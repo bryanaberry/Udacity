@@ -81,7 +81,8 @@
       <div class="md-col-12">
         <form>
           Posts For:
-          <input type="text" value="{{mypage_name}}" name="mypage_name" required>
+          <span class="error" value= "{{error}}"</span>
+          <input type="text" value="{{mypage_name}}" name="mypage_name">
           <input type="submit" class="btn btn-primary" value="Change Wall">
         </form>
       </div>
@@ -94,12 +95,18 @@
           <h3><a href="{{url}}">{{url_linktext}}</a></h3>
         </div>
       </div>
+      
       <div class="col-md-8">
          <form class="form-submission" action="/sign?mypage_name={{mypage_name}}" method="post">
-          <textarea class="form-control" name="content" rows="5" cols="90" required></textarea><br>
+          <textarea class="form-control" name="content" rows="5" cols="90"></textarea><br>
           <input type="submit" class="btn btn-primary" value="Post to Wall">
         </form>
       </div>
+      {% if blankerror %}
+      <div>
+        <p> {{"blankerror"}}</p>
+      </div>
+      {% endif %}
     </div>
  
 

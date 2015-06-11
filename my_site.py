@@ -23,7 +23,7 @@ class Handler(webapp2.RequestHandler):
         self.write(self.render_str(template, **kw))
 
 
-DEFAULT_PAGE = 'January'
+DEFAULT_PAGE = 'Random Thoughts'
 
 def wall_key(mypage_name=DEFAULT_PAGE):
     return ndb.Key('Wall', mypage_name)
@@ -78,8 +78,6 @@ class PostWall(webapp2.RequestHandler):
         mypage_name = self.request.get('mypage_name',DEFAULT_PAGE)
 
                 
-        post = Post(parent=wall_key(mypage_name))
-
 
         if users.get_current_user():
             post.author = Author(
@@ -93,7 +91,6 @@ class PostWall(webapp2.RequestHandler):
             post.content = unicode(self.request.get('content'),'utf-8')
         else:
             post.content = self.request.get('content')
-        post.put()
 
         query_params = {'mypage_name': mypage_name}
         self.redirect('/?' + urllib.urlencode(query_params))
