@@ -11,6 +11,7 @@ import jinja2
 template_dir = os.path.join(os.path.dirname(__file__), 'templates')
 jinja_env = jinja2.Environment(loader = jinja2.FileSystemLoader(template_dir), autoescape=True)
 
+
 class Handler(webapp2.RequestHandler):
     def write(self, *a, **kw):
         self.response.write(*a, **kw)
@@ -38,14 +39,19 @@ class Post(ndb.Model):
     content = ndb.StringProperty(indexed=False)
     date = ndb.DateTimeProperty(auto_now_add=True)
 
+
+
+
+
 class MainPage(Handler):
     def get(self):
         mypage_name = self.request.get('mypage_name',DEFAULT_PAGE)
 
 
         if mypage_name == DEFAULT_PAGE.lower(): mypage_name = DEFAULT_PAGE
-        #if mypage_name = False or "":
-        #    mypage_name = DEFAULT_PAGE
+        
+        if not mypage_name:
+            mypage_name = DEFAULT_PAGE
 
         posts_to_fetch = 10
         cursor_url = self.request.get('continue_posts')
@@ -53,6 +59,14 @@ class MainPage(Handler):
         posts_query = Post.query(ancestor = wall_key(mypage_name)).order(-Post.date)
         posts, cursor, more = posts_query.fetch_page(posts_to_fetch, start_cursor =
             Cursor(urlsafe=cursor_url))
+        
+        
+        #arguments['error'] = error_statement
+        #self.request.get('error_statement')
+        #content = ''
+        #error_statement = "Beginining statement"
+        
+        
 
         if more:
             arguments['continue_posts'] = cursor.urlsafe()
@@ -70,14 +84,20 @@ class MainPage(Handler):
         arguments['url'] = url
         arguments['url_linktext'] = url_linktext
 
-
+        
+        
+        
         self.render('notes.html', **arguments)
 
 class PostWall(webapp2.RequestHandler):
     def post(self):
         mypage_name = self.request.get('mypage_name',DEFAULT_PAGE)
 
+        if not mypage_name:
+            mypage_name = DEFAULT_PAGE
                 
+        post = Post(parent=wall_key(mypage_name))
+        
 
         if users.get_current_user():
             post.author = Author(
@@ -87,17 +107,31 @@ class PostWall(webapp2.RequestHandler):
 
         content = self.request.get('content')
 
-        if type(content) != unicode:
-            post.content = unicode(self.request.get('content'),'utf-8')
+        
+        if not content:
+            self.redirect('/?error_statement= this isnt working')
+            error_statement = 'NOT Please put a nice post above!'
         else:
-            post.content = self.request.get('content')
+            post = Post(parent=wall_key(mypage_name))
+            error = " Please put a nice post above!"
+            if type(content) != unicode:
+                post.content = unicode(self.request.get('content'),'utf-8')
+            else:
+                post.content = self.request.get('content')
+                post.put()
+
+
+        
+        
 
         query_params = {'mypage_name': mypage_name}
         self.redirect('/?' + urllib.urlencode(query_params))
+       
 
+        
 
 app = webapp2.WSGIApplication([
     ('/', MainPage),
-    ('/sign', PostWall),
+    ('/sign', PostWall)
 
 ], debug=True)
