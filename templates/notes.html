@@ -102,13 +102,13 @@
           <input type="submit" class="btn btn-primary" value="Post to Wall">
         </form>
       </div>
-      {% if blankerror %}
+      
       <div>
-        <p> {{"blankerror"}}</p>
+        <p> {{error_statement}}</p>
       </div>
-      {% endif %}
-    </div>
- 
+
+      
+     
 
   {% if posts %}
   {% for post in posts %}
